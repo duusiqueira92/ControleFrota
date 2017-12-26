@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastrarGuardas));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnColete = new System.Windows.Forms.Button();
+            this.btnArma = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnVoltar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -129,13 +131,24 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvGuardas = new System.Windows.Forms.DataGridView();
+            this.label49 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGuardas)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.btnColete);
+            this.groupBox1.Controls.Add(this.btnArma);
             this.groupBox1.Controls.Add(this.toolStrip1);
             this.groupBox1.Controls.Add(this.comboBox13);
             this.groupBox1.Controls.Add(this.label45);
@@ -234,6 +247,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informações Pessoais";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnColete
+            // 
+            this.btnColete.Location = new System.Drawing.Point(1245, 134);
+            this.btnColete.Name = "btnColete";
+            this.btnColete.Size = new System.Drawing.Size(95, 23);
+            this.btnColete.TabIndex = 89;
+            this.btnColete.Text = "Colete";
+            this.btnColete.UseVisualStyleBackColor = true;
+            // 
+            // btnArma
+            // 
+            this.btnArma.Location = new System.Drawing.Point(1055, 134);
+            this.btnArma.Name = "btnArma";
+            this.btnArma.Size = new System.Drawing.Size(95, 23);
+            this.btnArma.TabIndex = 88;
+            this.btnArma.Text = "Armamento";
+            this.btnArma.UseVisualStyleBackColor = true;
+            this.btnArma.Click += new System.EventHandler(this.btnArma_Click);
             // 
             // toolStrip1
             // 
@@ -523,14 +555,14 @@
             // 
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(1192, 361);
+            this.comboBox6.Location = new System.Drawing.Point(1207, 358);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(133, 26);
             this.comboBox6.TabIndex = 62;
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(1065, 303);
+            this.textBox20.Location = new System.Drawing.Point(1080, 300);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(75, 24);
             this.textBox20.TabIndex = 56;
@@ -547,7 +579,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(1100, 364);
+            this.label32.Location = new System.Drawing.Point(1115, 361);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(86, 18);
             this.label32.TabIndex = 61;
@@ -565,7 +597,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(1027, 306);
+            this.label29.Location = new System.Drawing.Point(1042, 303);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(32, 18);
             this.label29.TabIndex = 55;
@@ -582,7 +614,7 @@
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(1221, 331);
+            this.textBox21.Location = new System.Drawing.Point(1236, 328);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(104, 24);
             this.textBox21.TabIndex = 60;
@@ -599,7 +631,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(1146, 306);
+            this.label30.Location = new System.Drawing.Point(1161, 303);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(78, 18);
             this.label30.TabIndex = 57;
@@ -608,7 +640,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(1171, 334);
+            this.label31.Location = new System.Drawing.Point(1186, 331);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(44, 18);
             this.label31.TabIndex = 59;
@@ -625,7 +657,7 @@
             // 
             this.dateTimePicker5.CustomFormat = "";
             this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(1230, 301);
+            this.dateTimePicker5.Location = new System.Drawing.Point(1245, 298);
             this.dateTimePicker5.Name = "dateTimePicker5";
             this.dateTimePicker5.Size = new System.Drawing.Size(95, 24);
             this.dateTimePicker5.TabIndex = 58;
@@ -1080,6 +1112,75 @@
             this.dgvGuardas.Size = new System.Drawing.Size(1370, 234);
             this.dgvGuardas.TabIndex = 0;
             // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(146, 19);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(54, 18);
+            this.label49.TabIndex = 93;
+            this.label49.Text = "Taurus";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label52);
+            this.groupBox2.Controls.Add(this.label53);
+            this.groupBox2.Controls.Add(this.label46);
+            this.groupBox2.Controls.Add(this.label50);
+            this.groupBox2.Controls.Add(this.label49);
+            this.groupBox2.Controls.Add(this.label47);
+            this.groupBox2.Location = new System.Drawing.Point(1055, 176);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(226, 84);
+            this.groupBox2.TabIndex = 94;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Armamentos";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(146, 37);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(54, 18);
+            this.label46.TabIndex = 96;
+            this.label46.Text = "Taurus";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(146, 56);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(54, 18);
+            this.label52.TabIndex = 99;
+            this.label52.Text = "Taurus";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(14, 20);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(53, 18);
+            this.label47.TabIndex = 91;
+            this.label47.Text = "Pistola";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(14, 38);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(82, 18);
+            this.label50.TabIndex = 94;
+            this.label50.Text = "Espingarda";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(14, 56);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(125, 18);
+            this.label53.TabIndex = 97;
+            this.label53.Text = "Sub Metralhadora";
+            // 
             // frmCadastrarGuardas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -1099,6 +1200,8 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGuardas)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1204,5 +1307,14 @@
         private System.Windows.Forms.ToolStripButton btnInformarApreensao;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton btnAcidentes;
+        private System.Windows.Forms.Button btnColete;
+        private System.Windows.Forms.Button btnArma;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label47;
     }
 }

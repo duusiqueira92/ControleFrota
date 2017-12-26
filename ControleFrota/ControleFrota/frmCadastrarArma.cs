@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ControleFrota
 {
-    public partial class frmCadastrarGuardas : Form
+    public partial class frmCadastrarArma : Form
     {
-        public frmCadastrarGuardas()
+        public frmCadastrarArma()
         {
             InitializeComponent();
         }
@@ -20,12 +20,6 @@ namespace ControleFrota
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnArma_Click(object sender, EventArgs e)
-        {
-            frmCadastrarArma cadArma = new frmCadastrarArma();
-            cadArma.ShowDialog();
         }
     }
 }
