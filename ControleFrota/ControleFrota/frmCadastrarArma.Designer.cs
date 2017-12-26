@@ -85,13 +85,13 @@
             this.dtpDataEmissaoDoc = new System.Windows.Forms.DateTimePicker();
             this.dtpDataValidade = new System.Windows.Forms.DateTimePicker();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnVoltar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnInformarApreensao = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.cmbFuncionamento = new System.Windows.Forms.ComboBox();
+            this.btnVoltar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.btnInformarApreensao = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -631,49 +631,16 @@
             this.toolStrip1.TabIndex = 88;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
-            this.btnVoltar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnVoltar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(41, 35);
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(61, 35);
-            this.toolStripButton4.Text = "Cadastrar";
-            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 38);
-            // 
-            // btnInformarApreensao
-            // 
-            this.btnInformarApreensao.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnInformarApreensao.Image = ((System.Drawing.Image)(resources.GetObject("btnInformarApreensao.Image")));
-            this.btnInformarApreensao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnInformarApreensao.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnInformarApreensao.Name = "btnInformarApreensao";
-            this.btnInformarApreensao.Size = new System.Drawing.Size(48, 35);
-            this.btnInformarApreensao.Text = "Limpar";
-            this.btnInformarApreensao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnInformarApreensao.ToolTipText = "Informar apreensões";
             // 
             // toolStripSeparator2
             // 
@@ -688,6 +655,39 @@
             this.cmbFuncionamento.Name = "cmbFuncionamento";
             this.cmbFuncionamento.Size = new System.Drawing.Size(148, 26);
             this.cmbFuncionamento.TabIndex = 65;
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
+            this.btnVoltar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnVoltar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(41, 35);
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(61, 35);
+            this.toolStripButton4.Text = "Cadastrar";
+            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // btnInformarApreensao
+            // 
+            this.btnInformarApreensao.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnInformarApreensao.Image = ((System.Drawing.Image)(resources.GetObject("btnInformarApreensao.Image")));
+            this.btnInformarApreensao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnInformarApreensao.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnInformarApreensao.Name = "btnInformarApreensao";
+            this.btnInformarApreensao.Size = new System.Drawing.Size(48, 35);
+            this.btnInformarApreensao.Text = "Limpar";
+            this.btnInformarApreensao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInformarApreensao.ToolTipText = "Informar apreensões";
             // 
             // frmCadastrarArma
             // 

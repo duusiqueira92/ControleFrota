@@ -52,6 +52,12 @@
     <Compile Include="frmCadastrarArma.Designer.cs">
       <DependentUpon>frmCadastrarArma.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastrarColete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarColete.Designer.cs">
+      <DependentUpon>frmCadastrarColete.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastrarGuardas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadastrarArma.resx">
       <DependentUpon>frmCadastrarArma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarColete.resx">
+      <DependentUpon>frmCadastrarColete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastrarGuardas.resx">
       <DependentUpon>frmCadastrarGuardas.cs</DependentUpon>
