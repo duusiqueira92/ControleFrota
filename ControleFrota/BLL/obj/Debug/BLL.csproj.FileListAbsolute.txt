@@ -1,0 +1,14 @@
+C:\Users\duhsi\Desktop\ETEC\Programação C#\ControleFrota\ControleFrota\BLL\bin\Debug\BLL.dll
+C:\Users\duhsi\Desktop\ETEC\Programação C#\ControleFrota\ControleFrota\BLL\bin\Debug\BLL.pdb
+C:\Users\duhsi\Desktop\ETEC\Programação C#\ControleFrota\ControleFrota\BLL\bin\Debug\DAL.dll
+C:\Users\duhsi\Desktop\ETEC\Programação C#\ControleFrota\ControleFrota\BLL\bin\Debug\DAL.pdb
+C:\Users\duhsi\Desktop\ETEC\Programação C#\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\duhsi\Desktop\ETEC\Programação C#\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.dll
+C:\Users\duhsi\Desktop\ETEC\Programação C#\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.pdb
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\bin\Debug\BLL.dll
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\bin\Debug\BLL.pdb
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\bin\Debug\DAL.dll
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\bin\Debug\DAL.pdb
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.dll
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.pdb
