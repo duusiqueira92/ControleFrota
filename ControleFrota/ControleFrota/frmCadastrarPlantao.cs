@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ControleFrota
 {
-    public partial class frmInformarEquipes : Form
+    public partial class frmCadastrarPlantao : Form
     {
-        public frmInformarEquipes()
+        public frmCadastrarPlantao()
         {
             InitializeComponent();
-        }
-
-        private void frmInformarEquipes_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

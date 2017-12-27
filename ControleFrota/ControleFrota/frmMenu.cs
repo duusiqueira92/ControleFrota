@@ -23,7 +23,7 @@ namespace ControleFrota
 
         private void btnBoletimOcorrencia_Click(object sender, EventArgs e)
         {
-            frmInformarEquipes infoEquipe = new frmInformarEquipes();
+            frmCadastrarBoletim infoEquipe = new frmCadastrarBoletim();
             infoEquipe.ShowDialog();
         }
 
@@ -31,6 +31,24 @@ namespace ControleFrota
         {
             frmCadastrarGuardas cadGcm = new frmCadastrarGuardas();
             cadGcm.ShowDialog();
+        }
+
+        private void btnViaturas_Click(object sender, EventArgs e)
+        {
+            frmViaturas frmViaturas = new frmViaturas();
+            frmViaturas.ShowDialog();
+        }
+
+        private void btnPlantao_Click(object sender, EventArgs e)
+        {
+            frmCadastrarPlantao plantao = new frmCadastrarPlantao();
+            plantao.ShowDialog();
+        }
+
+        private void btnEquipes_Click(object sender, EventArgs e)
+        {
+            frmEquipes equipes = new frmEquipes();
+            equipes.ShowDialog();
         }
     }
 }

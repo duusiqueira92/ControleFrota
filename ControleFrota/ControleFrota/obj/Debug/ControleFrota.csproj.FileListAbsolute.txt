@@ -27,7 +27,12 @@ C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFr
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmCadastrarArma.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmCadastrarGuardas.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmCadNaturezaOcorrencia.resources
-C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmInformarEquipes.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmMenu.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.Properties.Resources.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.csproj.GenerateResource.Cache
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmCadastrarColete.resources
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmCadastrarBoletim.resources
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmViaturas.resources
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmEquipes.resources
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmCadastrarPlantao.resources
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmAcidentes.resources

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ControleFrota
 {
-    public partial class frmCadastrarGuardas : Form
+    public partial class frmEquipes : Form
     {
-        public frmCadastrarGuardas()
+        public frmEquipes()
         {
             InitializeComponent();
         }
@@ -22,16 +22,14 @@ namespace ControleFrota
 
         }
 
-        private void btnArma_Click_1(object sender, EventArgs e)
+        private void dgvGuardas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            frmCadastrarArma frmCadArma = new frmCadastrarArma();
-            frmCadArma.ShowDialog();
+
         }
 
-        private void btnColete_Click(object sender, EventArgs e)
+        private void groupBox4_Enter(object sender, EventArgs e)
         {
-            frmCadastrarColete frmCadColete = new frmCadastrarColete();
-            frmCadColete.ShowDialog();
+
         }
     }
 }

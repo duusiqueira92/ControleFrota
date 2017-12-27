@@ -2,25 +2,25 @@
 {
     public class Equipe
     {
-        public Equipe(string nomeEquipe, Funcionario motorista, Veiculo viatura)
+        public Equipe(Plantao plantao, Funcionario motorista, Veiculo viatura)
         {
-            this.nomeEquipe = nomeEquipe;
+            this.plantao = plantao;
             this.motorista = motorista;
             this.viatura = viatura;
         }
 
-        public Equipe(string nomeEquipe, Funcionario motorista, Funcionario encarregado, Veiculo viatura)
+        public Equipe(Plantao plantao, Funcionario motorista, Funcionario encarregado, Veiculo viatura)
         {
-            this.nomeEquipe = nomeEquipe;
+            this.plantao = plantao;
             this.motorista = motorista;
             this.encarregado = encarregado;
             this.viatura = viatura;
         }
 
-        public Equipe(string nomeEquipe, Funcionario motorista, Funcionario encarregado, 
+        public Equipe(Plantao plantao, Funcionario motorista, Funcionario encarregado, 
                       Funcionario auxiliar, Veiculo viatura)
         {
-            this.nomeEquipe = nomeEquipe;
+            this.plantao = plantao;
             this.motorista = motorista;
             this.encarregado = encarregado;
             this.auxiliar = auxiliar;
@@ -34,11 +34,11 @@
             private set { id = value; }
         }
 
-        private string nomeEquipe;
-        public string NomeEquipe
+        private Plantao plantao;
+        public Plantao Plantao
         {
-            get { return nomeEquipe; }
-            set { nomeEquipe = value; }
+            get { return plantao; }
+            set { plantao = value; }
         }
 
         private Funcionario motorista;

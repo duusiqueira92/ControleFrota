@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAcidentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcidentes.Designer.cs">
+      <DependentUpon>frmAcidentes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastrarArma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,17 +70,29 @@
     <Compile Include="frmCadastrarGuardas.Designer.cs">
       <DependentUpon>frmCadastrarGuardas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastrarPlantao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarPlantao.Designer.cs">
+      <DependentUpon>frmCadastrarPlantao.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadNaturezaOcorrencia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCadNaturezaOcorrencia.Designer.cs">
       <DependentUpon>frmCadNaturezaOcorrencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInformarEquipes.cs">
+    <Compile Include="frmCadastrarBoletim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInformarEquipes.Designer.cs">
-      <DependentUpon>frmInformarEquipes.cs</DependentUpon>
+    <Compile Include="frmCadastrarBoletim.Designer.cs">
+      <DependentUpon>frmCadastrarBoletim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEquipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEquipes.Designer.cs">
+      <DependentUpon>frmEquipes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
@@ -82,8 +100,17 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViaturas.Designer.cs">
+      <DependentUpon>frmViaturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAcidentes.resx">
+      <DependentUpon>frmAcidentes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastrarArma.resx">
       <DependentUpon>frmCadastrarArma.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,14 +120,23 @@
     <EmbeddedResource Include="frmCadastrarGuardas.resx">
       <DependentUpon>frmCadastrarGuardas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarPlantao.resx">
+      <DependentUpon>frmCadastrarPlantao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadNaturezaOcorrencia.resx">
       <DependentUpon>frmCadNaturezaOcorrencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInformarEquipes.resx">
-      <DependentUpon>frmInformarEquipes.cs</DependentUpon>
+    <EmbeddedResource Include="frmCadastrarBoletim.resx">
+      <DependentUpon>frmCadastrarBoletim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEquipes.resx">
+      <DependentUpon>frmEquipes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViaturas.resx">
+      <DependentUpon>frmViaturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

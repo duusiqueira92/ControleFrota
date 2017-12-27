@@ -1,62 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
 namespace DAL
 {
     public class Plantao
     {
-        public Plantao(Equipe setorDiurnoA, Equipe setorDiurnoB, Equipe setorNoturnoA,
-            Equipe setorNoturnoB, Equipe apoioA, Equipe apoioB)
+        public Plantao(string nomePlantao, DateTime horaInicio, DateTime horaTermino)
         {
-            this.apoioA = apoioA;
-            this.apoioB = apoioB;
-            this.setorDiurnoA = setorDiurnoA;
-            this.setorDiurnoB = setorDiurnoB;
-            this.setorNoturnoA = setorNoturnoA;
-            this.setorNoturnoB = setorNoturnoB;
+            this.nomePlantao = nomePlantao;
+            this.horaInicio = horaInicio;
+            this.horaTermino = horaTermino;
         }
 
-        private Equipe setorDiurnoA;
-        public Equipe SetorDiurnoA
+        private int id;
+        public int Id
         {
-            get { return setorDiurnoA; }
-            set { setorDiurnoA = value; }
+            get { return id; }
+            set { id = value; }
         }
 
-        private Equipe setorDiurnoB;
-        public Equipe SetorDiurnoB
+        private string nomePlantao;
+        public string NomePlantao
         {
-            get { return setorDiurnoB; }
-            set { setorDiurnoB = value; }
+            get { return nomePlantao; }
+            set { nomePlantao = value; }
         }
 
-        private Equipe setorNoturnoA;
-        public Equipe SetorNoturnoA
+        private DateTime horaInicio;
+        public DateTime HoraInicio
         {
-            get { return setorNoturnoA; }
-            set { setorNoturnoA = value; }
+            get { return horaInicio; }
+            set { horaInicio = value; }
         }
 
-        private Equipe setorNoturnoB;
-        public Equipe SetorNoturnoB
+        private DateTime horaTermino;
+        public DateTime HoraTermino
         {
-            get { return setorNoturnoB; }
-            set { setorNoturnoB = value; }
-        }
-
-        private Equipe apoioA;
-        public Equipe ApoioA
-        {
-            get { return apoioA; }
-            set { apoioA = value; }
-        }
-
-        private Equipe apoioB;
-        public Equipe ApoioB
-        {
-            get { return apoioB; }
-            set { apoioB = value; }
+            get { return horaTermino; }
+            set { horaTermino = value; }
         }
     }
 }

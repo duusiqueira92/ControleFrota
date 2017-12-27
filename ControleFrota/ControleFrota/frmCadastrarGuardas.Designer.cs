@@ -30,16 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastrarGuardas));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnColete = new System.Windows.Forms.Button();
-            this.btnArma = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnVoltar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnInformarApreensao = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnAcidentes = new System.Windows.Forms.ToolStripButton();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
@@ -131,24 +125,27 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvGuardas = new System.Windows.Forms.DataGridView();
-            this.label49 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnColete = new System.Windows.Forms.ToolStripButton();
+            this.btnArma = new System.Windows.Forms.ToolStripButton();
+            this.btnVoltar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.btnInformarApreensao = new System.Windows.Forms.ToolStripButton();
+            this.btnAcidentes = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGuardas)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.btnColete);
-            this.groupBox1.Controls.Add(this.btnArma);
             this.groupBox1.Controls.Add(this.toolStrip1);
             this.groupBox1.Controls.Add(this.comboBox13);
             this.groupBox1.Controls.Add(this.label45);
@@ -248,25 +245,6 @@
             this.groupBox1.Text = "Informações Pessoais";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // btnColete
-            // 
-            this.btnColete.Location = new System.Drawing.Point(1245, 134);
-            this.btnColete.Name = "btnColete";
-            this.btnColete.Size = new System.Drawing.Size(95, 23);
-            this.btnColete.TabIndex = 89;
-            this.btnColete.Text = "Colete";
-            this.btnColete.UseVisualStyleBackColor = true;
-            // 
-            // btnArma
-            // 
-            this.btnArma.Location = new System.Drawing.Point(1055, 134);
-            this.btnArma.Name = "btnArma";
-            this.btnArma.Size = new System.Drawing.Size(95, 23);
-            this.btnArma.TabIndex = 88;
-            this.btnArma.Text = "Armamento";
-            this.btnArma.UseVisualStyleBackColor = true;
-            this.btnArma.Click += new System.EventHandler(this.btnArma_Click);
-            // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -284,31 +262,10 @@
             this.toolStrip1.TabIndex = 87;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
-            this.btnVoltar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnVoltar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(41, 35);
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(61, 35);
-            this.toolStripButton4.Text = "Cadastrar";
-            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator3
             // 
@@ -316,35 +273,11 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 38);
             // 
-            // btnInformarApreensao
-            // 
-            this.btnInformarApreensao.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnInformarApreensao.Image = ((System.Drawing.Image)(resources.GetObject("btnInformarApreensao.Image")));
-            this.btnInformarApreensao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnInformarApreensao.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnInformarApreensao.Name = "btnInformarApreensao";
-            this.btnInformarApreensao.Size = new System.Drawing.Size(48, 35);
-            this.btnInformarApreensao.Text = "Limpar";
-            this.btnInformarApreensao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnInformarApreensao.ToolTipText = "Informar apreensões";
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 38);
-            // 
-            // btnAcidentes
-            // 
-            this.btnAcidentes.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnAcidentes.Image = ((System.Drawing.Image)(resources.GetObject("btnAcidentes.Image")));
-            this.btnAcidentes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnAcidentes.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAcidentes.Name = "btnAcidentes";
-            this.btnAcidentes.Size = new System.Drawing.Size(46, 35);
-            this.btnAcidentes.Text = "Alterar";
-            this.btnAcidentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnAcidentes.ToolTipText = "Informar acidentes";
             // 
             // comboBox13
             // 
@@ -555,14 +488,14 @@
             // 
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(1207, 358);
+            this.comboBox6.Location = new System.Drawing.Point(1207, 196);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(133, 26);
             this.comboBox6.TabIndex = 62;
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(1080, 300);
+            this.textBox20.Location = new System.Drawing.Point(1080, 138);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(75, 24);
             this.textBox20.TabIndex = 56;
@@ -579,7 +512,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(1115, 361);
+            this.label32.Location = new System.Drawing.Point(1115, 199);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(86, 18);
             this.label32.TabIndex = 61;
@@ -597,7 +530,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(1042, 303);
+            this.label29.Location = new System.Drawing.Point(1042, 141);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(32, 18);
             this.label29.TabIndex = 55;
@@ -614,7 +547,7 @@
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(1236, 328);
+            this.textBox21.Location = new System.Drawing.Point(1236, 166);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(104, 24);
             this.textBox21.TabIndex = 60;
@@ -631,7 +564,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(1161, 303);
+            this.label30.Location = new System.Drawing.Point(1161, 141);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(78, 18);
             this.label30.TabIndex = 57;
@@ -640,7 +573,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(1186, 331);
+            this.label31.Location = new System.Drawing.Point(1186, 169);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(44, 18);
             this.label31.TabIndex = 59;
@@ -657,7 +590,7 @@
             // 
             this.dateTimePicker5.CustomFormat = "";
             this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(1245, 298);
+            this.dateTimePicker5.Location = new System.Drawing.Point(1245, 136);
             this.dateTimePicker5.Name = "dateTimePicker5";
             this.dateTimePicker5.Size = new System.Drawing.Size(95, 24);
             this.dateTimePicker5.TabIndex = 58;
@@ -1105,81 +1038,126 @@
             // 
             // dgvGuardas
             // 
+            this.dgvGuardas.AllowUserToAddRows = false;
+            this.dgvGuardas.AllowUserToDeleteRows = false;
             this.dgvGuardas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGuardas.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvGuardas.Location = new System.Drawing.Point(0, 515);
             this.dgvGuardas.Name = "dgvGuardas";
+            this.dgvGuardas.ReadOnly = true;
             this.dgvGuardas.Size = new System.Drawing.Size(1370, 234);
             this.dgvGuardas.TabIndex = 0;
             // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(146, 19);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(54, 18);
-            this.label49.TabIndex = 93;
-            this.label49.Text = "Taurus";
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label52);
-            this.groupBox2.Controls.Add(this.label53);
-            this.groupBox2.Controls.Add(this.label46);
-            this.groupBox2.Controls.Add(this.label50);
-            this.groupBox2.Controls.Add(this.label49);
-            this.groupBox2.Controls.Add(this.label47);
-            this.groupBox2.Location = new System.Drawing.Point(1055, 176);
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.toolStrip2);
+            this.groupBox2.Location = new System.Drawing.Point(958, 239);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(226, 84);
-            this.groupBox2.TabIndex = 94;
+            this.groupBox2.Size = new System.Drawing.Size(382, 170);
+            this.groupBox2.TabIndex = 88;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Armamentos";
+            this.groupBox2.Text = "Equipamentos";
             // 
-            // label46
+            // toolStrip2
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(146, 37);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(54, 18);
-            this.label46.TabIndex = 96;
-            this.label46.Text = "Taurus";
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnColete,
+            this.toolStripSeparator5,
+            this.btnArma});
+            this.toolStrip2.Location = new System.Drawing.Point(3, 20);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(376, 38);
+            this.toolStrip2.TabIndex = 88;
+            this.toolStrip2.Text = "toolStrip2";
             // 
-            // label52
+            // toolStripSeparator5
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(146, 56);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(54, 18);
-            this.label52.TabIndex = 99;
-            this.label52.Text = "Taurus";
+            this.toolStripSeparator5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 38);
             // 
-            // label47
+            // dataGridView1
             // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(14, 20);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(53, 18);
-            this.label47.TabIndex = 91;
-            this.label47.Text = "Pistola";
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 67);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(376, 100);
+            this.dataGridView1.TabIndex = 89;
             // 
-            // label50
+            // btnColete
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(14, 38);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(82, 18);
-            this.label50.TabIndex = 94;
-            this.label50.Text = "Espingarda";
+            this.btnColete.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnColete.Image = ((System.Drawing.Image)(resources.GetObject("btnColete.Image")));
+            this.btnColete.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnColete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnColete.Name = "btnColete";
+            this.btnColete.Size = new System.Drawing.Size(45, 35);
+            this.btnColete.Text = "Colete";
+            this.btnColete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnColete.Click += new System.EventHandler(this.btnColete_Click);
             // 
-            // label53
+            // btnArma
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(14, 56);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(125, 18);
-            this.label53.TabIndex = 97;
-            this.label53.Text = "Sub Metralhadora";
+            this.btnArma.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnArma.Image = ((System.Drawing.Image)(resources.GetObject("btnArma.Image")));
+            this.btnArma.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnArma.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnArma.Name = "btnArma";
+            this.btnArma.Size = new System.Drawing.Size(40, 35);
+            this.btnArma.Text = "Arma";
+            this.btnArma.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnArma.ToolTipText = "Informar apreensões";
+            this.btnArma.Click += new System.EventHandler(this.btnArma_Click_1);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
+            this.btnVoltar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnVoltar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(41, 35);
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(61, 35);
+            this.toolStripButton4.Text = "Cadastrar";
+            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // btnInformarApreensao
+            // 
+            this.btnInformarApreensao.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnInformarApreensao.Image = ((System.Drawing.Image)(resources.GetObject("btnInformarApreensao.Image")));
+            this.btnInformarApreensao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnInformarApreensao.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnInformarApreensao.Name = "btnInformarApreensao";
+            this.btnInformarApreensao.Size = new System.Drawing.Size(48, 35);
+            this.btnInformarApreensao.Text = "Limpar";
+            this.btnInformarApreensao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInformarApreensao.ToolTipText = "Informar apreensões";
+            // 
+            // btnAcidentes
+            // 
+            this.btnAcidentes.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnAcidentes.Image = ((System.Drawing.Image)(resources.GetObject("btnAcidentes.Image")));
+            this.btnAcidentes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnAcidentes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAcidentes.Name = "btnAcidentes";
+            this.btnAcidentes.Size = new System.Drawing.Size(46, 35);
+            this.btnAcidentes.Text = "Alterar";
+            this.btnAcidentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAcidentes.ToolTipText = "Informar acidentes";
             // 
             // frmCadastrarGuardas
             // 
@@ -1202,6 +1180,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvGuardas)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1307,14 +1288,11 @@
         private System.Windows.Forms.ToolStripButton btnInformarApreensao;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton btnAcidentes;
-        private System.Windows.Forms.Button btnColete;
-        private System.Windows.Forms.Button btnArma;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripButton btnColete;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton btnArma;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
