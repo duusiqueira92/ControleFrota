@@ -41,7 +41,7 @@ namespace ControleFrota
 
         private void btnPlantao_Click(object sender, EventArgs e)
         {
-            frmCadastrarPlantao plantao = new frmCadastrarPlantao();
+            frmGerenciarPlantao plantao = new frmGerenciarPlantao();
             plantao.ShowDialog();
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,12 @@ namespace ControleFrota
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            ArmamentoBLL cadArma = new ArmamentoBLL();
+            cadArma.salvarArma(0, txtModelo.Text, txtModelo.Text, txtNumArma.Text);
         }
     }
 }

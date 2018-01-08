@@ -36,3 +36,4 @@ C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFr
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmEquipes.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmCadastrarPlantao.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmAcidentes.resources
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmGerenciarPlantao.resources

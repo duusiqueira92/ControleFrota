@@ -31,5 +31,10 @@ namespace ControleFrota
         {
 
         }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

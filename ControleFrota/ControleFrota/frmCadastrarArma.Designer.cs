@@ -30,6 +30,48 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastrarArma));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbFuncionamento = new System.Windows.Forms.ComboBox();
+            this.dtpDataValidade = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataEmissaoDoc = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataNF = new System.Windows.Forms.DateTimePicker();
+            this.cmbCapTiros = new System.Windows.Forms.ComboBox();
+            this.txtSentRaia = new System.Windows.Forms.ComboBox();
+            this.txtTipoAlma = new System.Windows.Forms.ComboBox();
+            this.cmbQtdCanos = new System.Windows.Forms.ComboBox();
+            this.txtQtdRaia = new System.Windows.Forms.ComboBox();
+            this.txtNumRegistro = new System.Windows.Forms.TextBox();
+            this.txtCidadeEmissao = new System.Windows.Forms.TextBox();
+            this.txtNumNF = new System.Windows.Forms.TextBox();
+            this.txtPaisFab = new System.Windows.Forms.TextBox();
+            this.txtCompCano = new System.Windows.Forms.TextBox();
+            this.txtAcabamento = new System.Windows.Forms.TextBox();
+            this.txtNumArma = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtCalibre = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtEspecie = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtNumCadastro = new System.Windows.Forms.TextBox();
+            this.txtAnoCadastro = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.lblOrgEmissor = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lblRg = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.lblCpf = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.lblProprietario = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lblPolegadas = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -43,55 +85,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.lblProprietario = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.lblCpf = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.lblRg = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.lblOrgEmissor = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.txtAnoCadastro = new System.Windows.Forms.TextBox();
-            this.txtNumCadastro = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.txtEspecie = new System.Windows.Forms.TextBox();
-            this.txtModelo = new System.Windows.Forms.TextBox();
-            this.txtCalibre = new System.Windows.Forms.TextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
-            this.txtNumArma = new System.Windows.Forms.TextBox();
-            this.txtAcabamento = new System.Windows.Forms.TextBox();
-            this.txtCompCano = new System.Windows.Forms.TextBox();
-            this.txtPaisFab = new System.Windows.Forms.TextBox();
-            this.txtNumNF = new System.Windows.Forms.TextBox();
-            this.txtCidadeEmissao = new System.Windows.Forms.TextBox();
-            this.txtNumRegistro = new System.Windows.Forms.TextBox();
-            this.txtQtdRaia = new System.Windows.Forms.ComboBox();
-            this.cmbQtdCanos = new System.Windows.Forms.ComboBox();
-            this.txtTipoAlma = new System.Windows.Forms.ComboBox();
-            this.txtSentRaia = new System.Windows.Forms.ComboBox();
-            this.cmbCapTiros = new System.Windows.Forms.ComboBox();
-            this.dtpDataNF = new System.Windows.Forms.DateTimePicker();
-            this.dtpDataEmissaoDoc = new System.Windows.Forms.DateTimePicker();
-            this.dtpDataValidade = new System.Windows.Forms.DateTimePicker();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmbFuncionamento = new System.Windows.Forms.ComboBox();
             this.btnVoltar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.btnInformarApreensao = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnCadastrar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnLimpar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -162,6 +162,349 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Armamento";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cmbFuncionamento
+            // 
+            this.cmbFuncionamento.FormattingEnabled = true;
+            this.cmbFuncionamento.Location = new System.Drawing.Point(126, 171);
+            this.cmbFuncionamento.Name = "cmbFuncionamento";
+            this.cmbFuncionamento.Size = new System.Drawing.Size(148, 26);
+            this.cmbFuncionamento.TabIndex = 65;
+            // 
+            // dtpDataValidade
+            // 
+            this.dtpDataValidade.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataValidade.Location = new System.Drawing.Point(387, 415);
+            this.dtpDataValidade.Name = "dtpDataValidade";
+            this.dtpDataValidade.Size = new System.Drawing.Size(98, 24);
+            this.dtpDataValidade.TabIndex = 64;
+            // 
+            // dtpDataEmissaoDoc
+            // 
+            this.dtpDataEmissaoDoc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataEmissaoDoc.Location = new System.Drawing.Point(387, 349);
+            this.dtpDataEmissaoDoc.Name = "dtpDataEmissaoDoc";
+            this.dtpDataEmissaoDoc.Size = new System.Drawing.Size(98, 24);
+            this.dtpDataEmissaoDoc.TabIndex = 63;
+            // 
+            // dtpDataNF
+            // 
+            this.dtpDataNF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataNF.Location = new System.Drawing.Point(387, 320);
+            this.dtpDataNF.Name = "dtpDataNF";
+            this.dtpDataNF.Size = new System.Drawing.Size(98, 24);
+            this.dtpDataNF.TabIndex = 62;
+            // 
+            // cmbCapTiros
+            // 
+            this.cmbCapTiros.FormattingEnabled = true;
+            this.cmbCapTiros.Location = new System.Drawing.Point(387, 120);
+            this.cmbCapTiros.Name = "cmbCapTiros";
+            this.cmbCapTiros.Size = new System.Drawing.Size(87, 26);
+            this.cmbCapTiros.TabIndex = 61;
+            // 
+            // txtSentRaia
+            // 
+            this.txtSentRaia.FormattingEnabled = true;
+            this.txtSentRaia.Location = new System.Drawing.Point(128, 261);
+            this.txtSentRaia.Name = "txtSentRaia";
+            this.txtSentRaia.Size = new System.Drawing.Size(125, 26);
+            this.txtSentRaia.TabIndex = 60;
+            // 
+            // txtTipoAlma
+            // 
+            this.txtTipoAlma.FormattingEnabled = true;
+            this.txtTipoAlma.Location = new System.Drawing.Point(128, 230);
+            this.txtTipoAlma.Name = "txtTipoAlma";
+            this.txtTipoAlma.Size = new System.Drawing.Size(125, 26);
+            this.txtTipoAlma.TabIndex = 59;
+            // 
+            // cmbQtdCanos
+            // 
+            this.cmbQtdCanos.FormattingEnabled = true;
+            this.cmbQtdCanos.Location = new System.Drawing.Point(128, 200);
+            this.cmbQtdCanos.Name = "cmbQtdCanos";
+            this.cmbQtdCanos.Size = new System.Drawing.Size(87, 26);
+            this.cmbQtdCanos.TabIndex = 58;
+            // 
+            // txtQtdRaia
+            // 
+            this.txtQtdRaia.FormattingEnabled = true;
+            this.txtQtdRaia.Location = new System.Drawing.Point(387, 230);
+            this.txtQtdRaia.Name = "txtQtdRaia";
+            this.txtQtdRaia.Size = new System.Drawing.Size(87, 26);
+            this.txtQtdRaia.TabIndex = 57;
+            // 
+            // txtNumRegistro
+            // 
+            this.txtNumRegistro.Location = new System.Drawing.Point(126, 415);
+            this.txtNumRegistro.Name = "txtNumRegistro";
+            this.txtNumRegistro.Size = new System.Drawing.Size(127, 24);
+            this.txtNumRegistro.TabIndex = 56;
+            // 
+            // txtCidadeEmissao
+            // 
+            this.txtCidadeEmissao.Location = new System.Drawing.Point(128, 349);
+            this.txtCidadeEmissao.Name = "txtCidadeEmissao";
+            this.txtCidadeEmissao.Size = new System.Drawing.Size(127, 24);
+            this.txtCidadeEmissao.TabIndex = 54;
+            // 
+            // txtNumNF
+            // 
+            this.txtNumNF.Location = new System.Drawing.Point(128, 320);
+            this.txtNumNF.Name = "txtNumNF";
+            this.txtNumNF.Size = new System.Drawing.Size(127, 24);
+            this.txtNumNF.TabIndex = 52;
+            // 
+            // txtPaisFab
+            // 
+            this.txtPaisFab.Location = new System.Drawing.Point(387, 261);
+            this.txtPaisFab.Name = "txtPaisFab";
+            this.txtPaisFab.Size = new System.Drawing.Size(127, 24);
+            this.txtPaisFab.TabIndex = 49;
+            // 
+            // txtCompCano
+            // 
+            this.txtCompCano.Location = new System.Drawing.Point(387, 200);
+            this.txtCompCano.Name = "txtCompCano";
+            this.txtCompCano.Size = new System.Drawing.Size(87, 24);
+            this.txtCompCano.TabIndex = 46;
+            // 
+            // txtAcabamento
+            // 
+            this.txtAcabamento.Location = new System.Drawing.Point(387, 171);
+            this.txtAcabamento.Name = "txtAcabamento";
+            this.txtAcabamento.Size = new System.Drawing.Size(127, 24);
+            this.txtAcabamento.TabIndex = 44;
+            // 
+            // txtNumArma
+            // 
+            this.txtNumArma.Location = new System.Drawing.Point(387, 89);
+            this.txtNumArma.Name = "txtNumArma";
+            this.txtNumArma.Size = new System.Drawing.Size(127, 24);
+            this.txtNumArma.TabIndex = 41;
+            // 
+            // txtMarca
+            // 
+            this.txtMarca.Location = new System.Drawing.Point(387, 58);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(127, 24);
+            this.txtMarca.TabIndex = 40;
+            // 
+            // txtCalibre
+            // 
+            this.txtCalibre.Location = new System.Drawing.Point(85, 120);
+            this.txtCalibre.Name = "txtCalibre";
+            this.txtCalibre.Size = new System.Drawing.Size(127, 24);
+            this.txtCalibre.TabIndex = 39;
+            // 
+            // txtModelo
+            // 
+            this.txtModelo.Location = new System.Drawing.Point(85, 89);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(127, 24);
+            this.txtModelo.TabIndex = 38;
+            // 
+            // txtEspecie
+            // 
+            this.txtEspecie.Location = new System.Drawing.Point(85, 58);
+            this.txtEspecie.Name = "txtEspecie";
+            this.txtEspecie.Size = new System.Drawing.Size(127, 24);
+            this.txtEspecie.TabIndex = 37;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(218, 27);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(12, 18);
+            this.label26.TabIndex = 36;
+            this.label26.Text = "/";
+            // 
+            // txtNumCadastro
+            // 
+            this.txtNumCadastro.Location = new System.Drawing.Point(236, 24);
+            this.txtNumCadastro.Name = "txtNumCadastro";
+            this.txtNumCadastro.Size = new System.Drawing.Size(145, 24);
+            this.txtNumCadastro.TabIndex = 35;
+            // 
+            // txtAnoCadastro
+            // 
+            this.txtAnoCadastro.Location = new System.Drawing.Point(144, 24);
+            this.txtAnoCadastro.Name = "txtAnoCadastro";
+            this.txtAnoCadastro.Size = new System.Drawing.Size(68, 24);
+            this.txtAnoCadastro.TabIndex = 34;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(279, 418);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(102, 18);
+            this.label24.TabIndex = 33;
+            this.label24.Text = "Data Validade:";
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(298, 508);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(28, 18);
+            this.lblEstado.TabIndex = 32;
+            this.lblEstado.Text = "SP";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(280, 508);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(12, 18);
+            this.label27.TabIndex = 31;
+            this.label27.Text = "/";
+            // 
+            // lblOrgEmissor
+            // 
+            this.lblOrgEmissor.AutoSize = true;
+            this.lblOrgEmissor.Location = new System.Drawing.Point(236, 508);
+            this.lblOrgEmissor.Name = "lblOrgEmissor";
+            this.lblOrgEmissor.Size = new System.Drawing.Size(38, 18);
+            this.lblOrgEmissor.TabIndex = 30;
+            this.lblOrgEmissor.Text = "SSP";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(218, 508);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(12, 18);
+            this.label25.TabIndex = 29;
+            this.label25.Text = "/";
+            // 
+            // lblRg
+            // 
+            this.lblRg.AutoSize = true;
+            this.lblRg.Location = new System.Drawing.Point(127, 508);
+            this.lblRg.Name = "lblRg";
+            this.lblRg.Size = new System.Drawing.Size(85, 18);
+            this.lblRg.TabIndex = 28;
+            this.lblRg.Text = "48175612-7";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(85, 508);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(35, 18);
+            this.label23.TabIndex = 27;
+            this.label23.Text = "RG:";
+            // 
+            // lblCpf
+            // 
+            this.lblCpf.AutoSize = true;
+            this.lblCpf.Location = new System.Drawing.Point(127, 480);
+            this.lblCpf.Name = "lblCpf";
+            this.lblCpf.Size = new System.Drawing.Size(28, 18);
+            this.lblCpf.TabIndex = 26;
+            this.lblCpf.Text = "cpf";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(78, 480);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(42, 18);
+            this.label22.TabIndex = 25;
+            this.label22.Text = "CPF:";
+            // 
+            // lblProprietario
+            // 
+            this.lblProprietario.AutoSize = true;
+            this.lblProprietario.Location = new System.Drawing.Point(127, 448);
+            this.lblProprietario.Name = "lblProprietario";
+            this.lblProprietario.Size = new System.Drawing.Size(40, 18);
+            this.lblProprietario.TabIndex = 24;
+            this.lblProprietario.Text = "Prop";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(32, 418);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(88, 18);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Nº Registro:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(32, 448);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(89, 18);
+            this.label20.TabIndex = 22;
+            this.label20.Text = "Proprietário:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(1, 352);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(121, 18);
+            this.label19.TabIndex = 21;
+            this.label19.Text = "Cidade Emissão:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(275, 352);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(106, 18);
+            this.label18.TabIndex = 20;
+            this.label18.Text = "Data Emissão:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(314, 323);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(67, 18);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Data NF:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(70, 323);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(52, 18);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "Nº NF:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(262, 264);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(119, 18);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "País Fabricação:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(42, 264);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 18);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Snt. Raias:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(303, 233);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(78, 18);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "Qtd Raias:";
             // 
             // label12
             // 
@@ -280,381 +623,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Espécie:";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(303, 233);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(78, 18);
-            this.label13.TabIndex = 15;
-            this.label13.Text = "Qtd Raias:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(42, 264);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(80, 18);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "Snt. Raias:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(262, 264);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(119, 18);
-            this.label15.TabIndex = 17;
-            this.label15.Text = "País Fabricação:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(70, 323);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(52, 18);
-            this.label16.TabIndex = 18;
-            this.label16.Text = "Nº NF:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(314, 323);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(67, 18);
-            this.label17.TabIndex = 19;
-            this.label17.Text = "Data NF:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(275, 352);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(106, 18);
-            this.label18.TabIndex = 20;
-            this.label18.Text = "Data Emissão:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(1, 352);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(121, 18);
-            this.label19.TabIndex = 21;
-            this.label19.Text = "Cidade Emissão:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(32, 448);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(89, 18);
-            this.label20.TabIndex = 22;
-            this.label20.Text = "Proprietário:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(32, 418);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(88, 18);
-            this.label21.TabIndex = 23;
-            this.label21.Text = "Nº Registro:";
-            // 
-            // lblProprietario
-            // 
-            this.lblProprietario.AutoSize = true;
-            this.lblProprietario.Location = new System.Drawing.Point(127, 448);
-            this.lblProprietario.Name = "lblProprietario";
-            this.lblProprietario.Size = new System.Drawing.Size(40, 18);
-            this.lblProprietario.TabIndex = 24;
-            this.lblProprietario.Text = "Prop";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(78, 480);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(42, 18);
-            this.label22.TabIndex = 25;
-            this.label22.Text = "CPF:";
-            // 
-            // lblCpf
-            // 
-            this.lblCpf.AutoSize = true;
-            this.lblCpf.Location = new System.Drawing.Point(127, 480);
-            this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(28, 18);
-            this.lblCpf.TabIndex = 26;
-            this.lblCpf.Text = "cpf";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(85, 508);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(35, 18);
-            this.label23.TabIndex = 27;
-            this.label23.Text = "RG:";
-            // 
-            // lblRg
-            // 
-            this.lblRg.AutoSize = true;
-            this.lblRg.Location = new System.Drawing.Point(127, 508);
-            this.lblRg.Name = "lblRg";
-            this.lblRg.Size = new System.Drawing.Size(85, 18);
-            this.lblRg.TabIndex = 28;
-            this.lblRg.Text = "48175612-7";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(218, 508);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(12, 18);
-            this.label25.TabIndex = 29;
-            this.label25.Text = "/";
-            // 
-            // lblOrgEmissor
-            // 
-            this.lblOrgEmissor.AutoSize = true;
-            this.lblOrgEmissor.Location = new System.Drawing.Point(236, 508);
-            this.lblOrgEmissor.Name = "lblOrgEmissor";
-            this.lblOrgEmissor.Size = new System.Drawing.Size(38, 18);
-            this.lblOrgEmissor.TabIndex = 30;
-            this.lblOrgEmissor.Text = "SSP";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(280, 508);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(12, 18);
-            this.label27.TabIndex = 31;
-            this.label27.Text = "/";
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(298, 508);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(28, 18);
-            this.lblEstado.TabIndex = 32;
-            this.lblEstado.Text = "SP";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(279, 418);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(102, 18);
-            this.label24.TabIndex = 33;
-            this.label24.Text = "Data Validade:";
-            // 
-            // txtAnoCadastro
-            // 
-            this.txtAnoCadastro.Location = new System.Drawing.Point(144, 24);
-            this.txtAnoCadastro.Name = "txtAnoCadastro";
-            this.txtAnoCadastro.Size = new System.Drawing.Size(68, 24);
-            this.txtAnoCadastro.TabIndex = 34;
-            // 
-            // txtNumCadastro
-            // 
-            this.txtNumCadastro.Location = new System.Drawing.Point(236, 24);
-            this.txtNumCadastro.Name = "txtNumCadastro";
-            this.txtNumCadastro.Size = new System.Drawing.Size(145, 24);
-            this.txtNumCadastro.TabIndex = 35;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(218, 27);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(12, 18);
-            this.label26.TabIndex = 36;
-            this.label26.Text = "/";
-            // 
-            // txtEspecie
-            // 
-            this.txtEspecie.Location = new System.Drawing.Point(85, 58);
-            this.txtEspecie.Name = "txtEspecie";
-            this.txtEspecie.Size = new System.Drawing.Size(127, 24);
-            this.txtEspecie.TabIndex = 37;
-            // 
-            // txtModelo
-            // 
-            this.txtModelo.Location = new System.Drawing.Point(85, 89);
-            this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(127, 24);
-            this.txtModelo.TabIndex = 38;
-            // 
-            // txtCalibre
-            // 
-            this.txtCalibre.Location = new System.Drawing.Point(85, 120);
-            this.txtCalibre.Name = "txtCalibre";
-            this.txtCalibre.Size = new System.Drawing.Size(127, 24);
-            this.txtCalibre.TabIndex = 39;
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Location = new System.Drawing.Point(387, 58);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(127, 24);
-            this.txtMarca.TabIndex = 40;
-            // 
-            // txtNumArma
-            // 
-            this.txtNumArma.Location = new System.Drawing.Point(387, 89);
-            this.txtNumArma.Name = "txtNumArma";
-            this.txtNumArma.Size = new System.Drawing.Size(127, 24);
-            this.txtNumArma.TabIndex = 41;
-            // 
-            // txtAcabamento
-            // 
-            this.txtAcabamento.Location = new System.Drawing.Point(387, 171);
-            this.txtAcabamento.Name = "txtAcabamento";
-            this.txtAcabamento.Size = new System.Drawing.Size(127, 24);
-            this.txtAcabamento.TabIndex = 44;
-            // 
-            // txtCompCano
-            // 
-            this.txtCompCano.Location = new System.Drawing.Point(387, 200);
-            this.txtCompCano.Name = "txtCompCano";
-            this.txtCompCano.Size = new System.Drawing.Size(87, 24);
-            this.txtCompCano.TabIndex = 46;
-            // 
-            // txtPaisFab
-            // 
-            this.txtPaisFab.Location = new System.Drawing.Point(387, 261);
-            this.txtPaisFab.Name = "txtPaisFab";
-            this.txtPaisFab.Size = new System.Drawing.Size(127, 24);
-            this.txtPaisFab.TabIndex = 49;
-            // 
-            // txtNumNF
-            // 
-            this.txtNumNF.Location = new System.Drawing.Point(128, 320);
-            this.txtNumNF.Name = "txtNumNF";
-            this.txtNumNF.Size = new System.Drawing.Size(127, 24);
-            this.txtNumNF.TabIndex = 52;
-            // 
-            // txtCidadeEmissao
-            // 
-            this.txtCidadeEmissao.Location = new System.Drawing.Point(128, 349);
-            this.txtCidadeEmissao.Name = "txtCidadeEmissao";
-            this.txtCidadeEmissao.Size = new System.Drawing.Size(127, 24);
-            this.txtCidadeEmissao.TabIndex = 54;
-            // 
-            // txtNumRegistro
-            // 
-            this.txtNumRegistro.Location = new System.Drawing.Point(126, 415);
-            this.txtNumRegistro.Name = "txtNumRegistro";
-            this.txtNumRegistro.Size = new System.Drawing.Size(127, 24);
-            this.txtNumRegistro.TabIndex = 56;
-            // 
-            // txtQtdRaia
-            // 
-            this.txtQtdRaia.FormattingEnabled = true;
-            this.txtQtdRaia.Location = new System.Drawing.Point(387, 230);
-            this.txtQtdRaia.Name = "txtQtdRaia";
-            this.txtQtdRaia.Size = new System.Drawing.Size(87, 26);
-            this.txtQtdRaia.TabIndex = 57;
-            // 
-            // cmbQtdCanos
-            // 
-            this.cmbQtdCanos.FormattingEnabled = true;
-            this.cmbQtdCanos.Location = new System.Drawing.Point(128, 200);
-            this.cmbQtdCanos.Name = "cmbQtdCanos";
-            this.cmbQtdCanos.Size = new System.Drawing.Size(87, 26);
-            this.cmbQtdCanos.TabIndex = 58;
-            // 
-            // txtTipoAlma
-            // 
-            this.txtTipoAlma.FormattingEnabled = true;
-            this.txtTipoAlma.Location = new System.Drawing.Point(128, 230);
-            this.txtTipoAlma.Name = "txtTipoAlma";
-            this.txtTipoAlma.Size = new System.Drawing.Size(125, 26);
-            this.txtTipoAlma.TabIndex = 59;
-            // 
-            // txtSentRaia
-            // 
-            this.txtSentRaia.FormattingEnabled = true;
-            this.txtSentRaia.Location = new System.Drawing.Point(128, 261);
-            this.txtSentRaia.Name = "txtSentRaia";
-            this.txtSentRaia.Size = new System.Drawing.Size(125, 26);
-            this.txtSentRaia.TabIndex = 60;
-            // 
-            // cmbCapTiros
-            // 
-            this.cmbCapTiros.FormattingEnabled = true;
-            this.cmbCapTiros.Location = new System.Drawing.Point(387, 120);
-            this.cmbCapTiros.Name = "cmbCapTiros";
-            this.cmbCapTiros.Size = new System.Drawing.Size(87, 26);
-            this.cmbCapTiros.TabIndex = 61;
-            // 
-            // dtpDataNF
-            // 
-            this.dtpDataNF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataNF.Location = new System.Drawing.Point(387, 320);
-            this.dtpDataNF.Name = "dtpDataNF";
-            this.dtpDataNF.Size = new System.Drawing.Size(98, 24);
-            this.dtpDataNF.TabIndex = 62;
-            // 
-            // dtpDataEmissaoDoc
-            // 
-            this.dtpDataEmissaoDoc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataEmissaoDoc.Location = new System.Drawing.Point(387, 349);
-            this.dtpDataEmissaoDoc.Name = "dtpDataEmissaoDoc";
-            this.dtpDataEmissaoDoc.Size = new System.Drawing.Size(98, 24);
-            this.dtpDataEmissaoDoc.TabIndex = 63;
-            // 
-            // dtpDataValidade
-            // 
-            this.dtpDataValidade.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataValidade.Location = new System.Drawing.Point(387, 415);
-            this.dtpDataValidade.Name = "dtpDataValidade";
-            this.dtpDataValidade.Size = new System.Drawing.Size(98, 24);
-            this.dtpDataValidade.TabIndex = 64;
-            // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnVoltar,
             this.toolStripSeparator1,
-            this.toolStripButton4,
+            this.btnCadastrar,
             this.toolStripSeparator3,
-            this.btnInformarApreensao,
+            this.btnLimpar,
             this.toolStripSeparator2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 579);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(578, 38);
             this.toolStrip1.TabIndex = 88;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 38);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 38);
-            // 
-            // cmbFuncionamento
-            // 
-            this.cmbFuncionamento.FormattingEnabled = true;
-            this.cmbFuncionamento.Location = new System.Drawing.Point(126, 171);
-            this.cmbFuncionamento.Name = "cmbFuncionamento";
-            this.cmbFuncionamento.Size = new System.Drawing.Size(148, 26);
-            this.cmbFuncionamento.TabIndex = 65;
             // 
             // btnVoltar
             // 
@@ -666,28 +649,46 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripButton4
+            // toolStripSeparator1
             // 
-            this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(61, 35);
-            this.toolStripButton4.Text = "Cadastrar";
-            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
             // 
-            // btnInformarApreensao
+            // btnCadastrar
             // 
-            this.btnInformarApreensao.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnInformarApreensao.Image = ((System.Drawing.Image)(resources.GetObject("btnInformarApreensao.Image")));
-            this.btnInformarApreensao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnInformarApreensao.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnInformarApreensao.Name = "btnInformarApreensao";
-            this.btnInformarApreensao.Size = new System.Drawing.Size(48, 35);
-            this.btnInformarApreensao.Text = "Limpar";
-            this.btnInformarApreensao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnInformarApreensao.ToolTipText = "Informar apreensões";
+            this.btnCadastrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
+            this.btnCadastrar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnCadastrar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(61, 35);
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCadastrar.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 38);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
+            this.btnLimpar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnLimpar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(48, 35);
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnLimpar.ToolTipText = "Informar apreensões";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 38);
             // 
             // frmCadastrarArma
             // 
@@ -774,9 +775,9 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnVoltar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton btnCadastrar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton btnInformarApreensao;
+        private System.Windows.Forms.ToolStripButton btnLimpar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ComboBox cmbFuncionamento;
     }
