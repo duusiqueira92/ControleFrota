@@ -43,11 +43,25 @@ namespace DAL
             set { colisaoLateralDireita = value; }
         }
 
+        private bool colisaoLateralTrasDireita;
+        public bool ColisaoLateralTrasDireita
+        {
+            get { return colisaoLateralTrasDireita; }
+            set { colisaoLateralTrasDireita = value; }
+        }
+
         private bool colisaoLateralEsquerda;
         public bool ColisaoLateralEsquerda
         {
             get { return colisaoLateralEsquerda; }
             set { colisaoLateralEsquerda = value; }
+        }
+
+        private bool colisaoLateralTrasEsquerda;
+        public bool ColisaoLateraTraslEsquerda
+        {
+            get { return colisaoLateralTrasEsquerda; }
+            set { colisaoLateralTrasEsquerda = value; }
         }
 
         private bool colisaoTraseira;

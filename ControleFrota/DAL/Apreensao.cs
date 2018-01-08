@@ -16,6 +16,13 @@
             set { modeloObjeto = value; }
         }
 
+        private string marca;
+        public string Marca
+        {
+            get { return marca; }
+            set { marca = value; }
+        }
+
         private Objeto categoriaObjeto;
         public Objeto CategoriaObjeto
         {

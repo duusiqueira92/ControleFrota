@@ -35,6 +35,8 @@
             this.cmbPlantao = new System.Windows.Forms.ComboBox();
             this.cmbEquipe = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.cmbViatura = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.txtEncarregadoApoio = new System.Windows.Forms.TextBox();
@@ -83,6 +85,8 @@
             this.txtSegKmTermino = new System.Windows.Forms.TextBox();
             this.cmbNatOcorrencia = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtDataTerminoBo = new System.Windows.Forms.TextBox();
+            this.txtDataInicioBo = new System.Windows.Forms.TextBox();
             this.txtSegHoraTermino = new System.Windows.Forms.TextBox();
             this.txtHoraTermino = new System.Windows.Forms.TextBox();
             this.txtSegHoraInicio = new System.Windows.Forms.TextBox();
@@ -92,6 +96,9 @@
             this.label27 = new System.Windows.Forms.Label();
             this.cmbOcasiao = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtDataValCnh = new System.Windows.Forms.TextBox();
+            this.txtDataNascimento = new System.Windows.Forms.TextBox();
+            this.txtDataExpedicaoRg = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
@@ -166,13 +173,6 @@
             this.btnInformarApreensao = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAcidentes = new System.Windows.Forms.ToolStripButton();
-            this.label65 = new System.Windows.Forms.Label();
-            this.cmbViatura = new System.Windows.Forms.ComboBox();
-            this.txtDataInicioBo = new System.Windows.Forms.TextBox();
-            this.txtDataTerminoBo = new System.Windows.Forms.TextBox();
-            this.txtDataExpedicaoRg = new System.Windows.Forms.TextBox();
-            this.txtDataNascimento = new System.Windows.Forms.TextBox();
-            this.txtDataValCnh = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -278,6 +278,27 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Equipe";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(375, 22);
+            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(57, 18);
+            this.label65.TabIndex = 50;
+            this.label65.Text = "Viatura:";
+            // 
+            // cmbViatura
+            // 
+            this.cmbViatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbViatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbViatura.FormattingEnabled = true;
+            this.cmbViatura.Location = new System.Drawing.Point(439, 20);
+            this.cmbViatura.Name = "cmbViatura";
+            this.cmbViatura.Size = new System.Drawing.Size(109, 23);
+            this.cmbViatura.TabIndex = 51;
             // 
             // label28
             // 
@@ -799,6 +820,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados";
             // 
+            // txtDataTerminoBo
+            // 
+            this.txtDataTerminoBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataTerminoBo.Location = new System.Drawing.Point(519, 26);
+            this.txtDataTerminoBo.Name = "txtDataTerminoBo";
+            this.txtDataTerminoBo.Size = new System.Drawing.Size(102, 21);
+            this.txtDataTerminoBo.TabIndex = 62;
+            // 
+            // txtDataInicioBo
+            // 
+            this.txtDataInicioBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataInicioBo.Location = new System.Drawing.Point(163, 26);
+            this.txtDataInicioBo.Name = "txtDataInicioBo";
+            this.txtDataInicioBo.Size = new System.Drawing.Size(102, 21);
+            this.txtDataInicioBo.TabIndex = 61;
+            // 
             // txtSegHoraTermino
             // 
             this.txtSegHoraTermino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -951,6 +988,30 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Parte";
+            // 
+            // txtDataValCnh
+            // 
+            this.txtDataValCnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataValCnh.Location = new System.Drawing.Point(654, 78);
+            this.txtDataValCnh.Name = "txtDataValCnh";
+            this.txtDataValCnh.Size = new System.Drawing.Size(89, 21);
+            this.txtDataValCnh.TabIndex = 116;
+            // 
+            // txtDataNascimento
+            // 
+            this.txtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataNascimento.Location = new System.Drawing.Point(408, 21);
+            this.txtDataNascimento.Name = "txtDataNascimento";
+            this.txtDataNascimento.Size = new System.Drawing.Size(89, 21);
+            this.txtDataNascimento.TabIndex = 115;
+            // 
+            // txtDataExpedicaoRg
+            // 
+            this.txtDataExpedicaoRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataExpedicaoRg.Location = new System.Drawing.Point(408, 48);
+            this.txtDataExpedicaoRg.Name = "txtDataExpedicaoRg";
+            this.txtDataExpedicaoRg.Size = new System.Drawing.Size(89, 21);
+            this.txtDataExpedicaoRg.TabIndex = 113;
             // 
             // label64
             // 
@@ -1590,6 +1651,7 @@
             this.btnInformarApreensao.Text = "Apreensões";
             this.btnInformarApreensao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnInformarApreensao.ToolTipText = "Informar apreensões";
+            this.btnInformarApreensao.Click += new System.EventHandler(this.btnInformarApreensao_Click);
             // 
             // toolStripSeparator2
             // 
@@ -1608,67 +1670,7 @@
             this.btnAcidentes.Text = "Acidentes";
             this.btnAcidentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAcidentes.ToolTipText = "Informar acidentes";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(375, 22);
-            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(57, 18);
-            this.label65.TabIndex = 50;
-            this.label65.Text = "Viatura:";
-            // 
-            // cmbViatura
-            // 
-            this.cmbViatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbViatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbViatura.FormattingEnabled = true;
-            this.cmbViatura.Location = new System.Drawing.Point(439, 20);
-            this.cmbViatura.Name = "cmbViatura";
-            this.cmbViatura.Size = new System.Drawing.Size(109, 23);
-            this.cmbViatura.TabIndex = 51;
-            // 
-            // txtDataInicioBo
-            // 
-            this.txtDataInicioBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataInicioBo.Location = new System.Drawing.Point(163, 26);
-            this.txtDataInicioBo.Name = "txtDataInicioBo";
-            this.txtDataInicioBo.Size = new System.Drawing.Size(102, 21);
-            this.txtDataInicioBo.TabIndex = 61;
-            // 
-            // txtDataTerminoBo
-            // 
-            this.txtDataTerminoBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataTerminoBo.Location = new System.Drawing.Point(519, 26);
-            this.txtDataTerminoBo.Name = "txtDataTerminoBo";
-            this.txtDataTerminoBo.Size = new System.Drawing.Size(102, 21);
-            this.txtDataTerminoBo.TabIndex = 62;
-            // 
-            // txtDataExpedicaoRg
-            // 
-            this.txtDataExpedicaoRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataExpedicaoRg.Location = new System.Drawing.Point(408, 48);
-            this.txtDataExpedicaoRg.Name = "txtDataExpedicaoRg";
-            this.txtDataExpedicaoRg.Size = new System.Drawing.Size(89, 21);
-            this.txtDataExpedicaoRg.TabIndex = 113;
-            // 
-            // txtDataNascimento
-            // 
-            this.txtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataNascimento.Location = new System.Drawing.Point(408, 21);
-            this.txtDataNascimento.Name = "txtDataNascimento";
-            this.txtDataNascimento.Size = new System.Drawing.Size(89, 21);
-            this.txtDataNascimento.TabIndex = 115;
-            // 
-            // txtDataValCnh
-            // 
-            this.txtDataValCnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataValCnh.Location = new System.Drawing.Point(654, 78);
-            this.txtDataValCnh.Name = "txtDataValCnh";
-            this.txtDataValCnh.Size = new System.Drawing.Size(89, 21);
-            this.txtDataValCnh.TabIndex = 116;
+            this.btnAcidentes.Click += new System.EventHandler(this.btnAcidentes_Click);
             // 
             // frmCadastrarBoletim
             // 

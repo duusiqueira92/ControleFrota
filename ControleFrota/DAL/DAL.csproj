@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acidente.cs" />
+    <Compile Include="AcidenteRpository.cs" />
+    <Compile Include="AcidenteServices.cs" />
     <Compile Include="Apreensao.cs" />
     <Compile Include="ApreensaoRepository.cs" />
     <Compile Include="ApreensaoServices.cs" />
@@ -62,6 +65,8 @@
     <Compile Include="Graduacao.cs" />
     <Compile Include="GraduacaoRepository.cs" />
     <Compile Include="GraduacaoServices.cs" />
+    <Compile Include="Interfaces\IAcidenteRepository.cs" />
+    <Compile Include="Interfaces\IAcidenteServices.cs" />
     <Compile Include="Interfaces\IApreensoesRepository.cs" />
     <Compile Include="Interfaces\IApreensoesServices.cs" />
     <Compile Include="Interfaces\IBoletimOcorrenciaRepository.cs" />

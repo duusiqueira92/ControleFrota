@@ -52,6 +52,12 @@
     <Compile Include="frmAcidentes.Designer.cs">
       <DependentUpon>frmAcidentes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmApreensao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApreensao.Designer.cs">
+      <DependentUpon>frmApreensao.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastrarArma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAcidentes.resx">
       <DependentUpon>frmAcidentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApreensao.resx">
+      <DependentUpon>frmApreensao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastrarArma.resx">
       <DependentUpon>frmCadastrarArma.cs</DependentUpon>

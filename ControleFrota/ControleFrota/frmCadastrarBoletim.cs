@@ -30,5 +30,17 @@ namespace ControleFrota
                 MessageBox.Show("outra parte!");
             }
         }
+
+        private void btnInformarApreensao_Click(object sender, EventArgs e)
+        {
+            frmApreensao novaApreensao = new frmApreensao();
+            novaApreensao.ShowDialog();
+        }
+
+        private void btnAcidentes_Click(object sender, EventArgs e)
+        {
+            frmAcidentes novoAcidente = new frmAcidentes();
+            novoAcidente.ShowDialog();
+        }
     }
 }

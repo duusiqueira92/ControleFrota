@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace ControleFrota
 {
-    public partial class frmAcidentes : Form
+    public partial class frmApreensao : Form
     {
-        public frmAcidentes()
+        public frmApreensao()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox4_Enter(object sender, EventArgs e)
+        private void frmApreensao_Load(object sender, EventArgs e)
         {
 
         }
