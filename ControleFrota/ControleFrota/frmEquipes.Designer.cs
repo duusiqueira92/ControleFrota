@@ -29,6 +29,19 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.lblAuxiliar = new System.Windows.Forms.Label();
             this.lblEncarregado = new System.Windows.Forms.Label();
             this.lblMotorista = new System.Windows.Forms.Label();
@@ -85,21 +98,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dgvAbordados = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViaturas)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -109,11 +110,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvVeiculosAbordados)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAbordados)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.groupBox1);
@@ -146,6 +148,142 @@
             this.groupBox2.TabIndex = 92;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Viaturas";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(404, 218);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(59, 18);
+            this.label24.TabIndex = 123;
+            this.label24.Text = "120 KM";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(229, 218);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 18);
+            this.label6.TabIndex = 122;
+            this.label6.Text = "KM percorrido:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.label34);
+            this.groupBox1.Controls.Add(this.label33);
+            this.groupBox1.Controls.Add(this.label32);
+            this.groupBox1.Controls.Add(this.label31);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Controls.Add(this.label30);
+            this.groupBox1.Controls.Add(this.label28);
+            this.groupBox1.Controls.Add(this.label27);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Location = new System.Drawing.Point(487, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(328, 303);
+            this.groupBox1.TabIndex = 124;
+            this.groupBox1.TabStop = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.ForeColor = System.Drawing.Color.Lime;
+            this.label34.Location = new System.Drawing.Point(206, 245);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(30, 18);
+            this.label34.TabIndex = 135;
+            this.label34.Text = "OK";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.ForeColor = System.Drawing.Color.Lime;
+            this.label33.Location = new System.Drawing.Point(89, 245);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(30, 18);
+            this.label33.TabIndex = 134;
+            this.label33.Text = "OK";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.ForeColor = System.Drawing.Color.Lime;
+            this.label32.Location = new System.Drawing.Point(89, 173);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(30, 18);
+            this.label32.TabIndex = 133;
+            this.label32.Text = "OK";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.Lime;
+            this.label31.Location = new System.Drawing.Point(206, 173);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(30, 18);
+            this.label31.TabIndex = 132;
+            this.label31.Text = "OK";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.Lime;
+            this.label29.Location = new System.Drawing.Point(206, 114);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(30, 18);
+            this.label29.TabIndex = 130;
+            this.label29.Text = "OK";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(28, 114);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(148, 18);
+            this.label30.TabIndex = 129;
+            this.label30.Text = "Filtro de combustível:";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.ForeColor = System.Drawing.Color.Lime;
+            this.label28.Location = new System.Drawing.Point(206, 80);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(30, 18);
+            this.label28.TabIndex = 128;
+            this.label28.Text = "OK";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(78, 80);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(98, 18);
+            this.label27.TabIndex = 127;
+            this.label27.Text = "Filtro de óleo:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.Lime;
+            this.label25.Location = new System.Drawing.Point(206, 48);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(30, 18);
+            this.label25.TabIndex = 126;
+            this.label25.Text = "OK";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(72, 48);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(104, 18);
+            this.label26.TabIndex = 125;
+            this.label26.Text = "Troca de óleo:";
+            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // lblAuxiliar
             // 
@@ -194,6 +332,7 @@
             // 
             // txtObs
             // 
+            this.txtObs.BackColor = System.Drawing.SystemColors.Control;
             this.txtObs.Location = new System.Drawing.Point(109, 258);
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
@@ -202,6 +341,7 @@
             // 
             // txtLitros
             // 
+            this.txtLitros.BackColor = System.Drawing.SystemColors.Control;
             this.txtLitros.Location = new System.Drawing.Point(398, 180);
             this.txtLitros.Name = "txtLitros";
             this.txtLitros.Size = new System.Drawing.Size(65, 24);
@@ -209,6 +349,7 @@
             // 
             // txtKmTermino
             // 
+            this.txtKmTermino.BackColor = System.Drawing.SystemColors.Control;
             this.txtKmTermino.Location = new System.Drawing.Point(369, 148);
             this.txtKmTermino.Name = "txtKmTermino";
             this.txtKmTermino.Size = new System.Drawing.Size(94, 24);
@@ -216,6 +357,7 @@
             // 
             // txtKmInicio
             // 
+            this.txtKmInicio.BackColor = System.Drawing.SystemColors.Control;
             this.txtKmInicio.Location = new System.Drawing.Point(136, 145);
             this.txtKmInicio.Name = "txtKmInicio";
             this.txtKmInicio.Size = new System.Drawing.Size(94, 24);
@@ -456,6 +598,7 @@
             // 
             // txtPlaca
             // 
+            this.txtPlaca.BackColor = System.Drawing.SystemColors.Control;
             this.txtPlaca.Location = new System.Drawing.Point(424, 62);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(87, 24);
@@ -463,6 +606,7 @@
             // 
             // txtMarca
             // 
+            this.txtMarca.BackColor = System.Drawing.SystemColors.Control;
             this.txtMarca.Location = new System.Drawing.Point(408, 30);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(103, 24);
@@ -470,6 +614,7 @@
             // 
             // txtModelo
             // 
+            this.txtModelo.BackColor = System.Drawing.SystemColors.Control;
             this.txtModelo.Location = new System.Drawing.Point(88, 59);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(129, 24);
@@ -477,6 +622,7 @@
             // 
             // txtEnderecoCondutor
             // 
+            this.txtEnderecoCondutor.BackColor = System.Drawing.SystemColors.Control;
             this.txtEnderecoCondutor.Location = new System.Drawing.Point(88, 91);
             this.txtEnderecoCondutor.Name = "txtEnderecoCondutor";
             this.txtEnderecoCondutor.Size = new System.Drawing.Size(254, 24);
@@ -484,6 +630,7 @@
             // 
             // txtNomeCondutor
             // 
+            this.txtNomeCondutor.BackColor = System.Drawing.SystemColors.Control;
             this.txtNomeCondutor.Location = new System.Drawing.Point(88, 30);
             this.txtNomeCondutor.Name = "txtNomeCondutor";
             this.txtNomeCondutor.Size = new System.Drawing.Size(254, 24);
@@ -587,6 +734,7 @@
             // 
             // txtEnderecoAbordado
             // 
+            this.txtEnderecoAbordado.BackColor = System.Drawing.SystemColors.Control;
             this.txtEnderecoAbordado.Location = new System.Drawing.Point(96, 91);
             this.txtEnderecoAbordado.Name = "txtEnderecoAbordado";
             this.txtEnderecoAbordado.Size = new System.Drawing.Size(254, 24);
@@ -594,6 +742,7 @@
             // 
             // txtArtigoAbordado
             // 
+            this.txtArtigoAbordado.BackColor = System.Drawing.SystemColors.Control;
             this.txtArtigoAbordado.Location = new System.Drawing.Point(415, 60);
             this.txtArtigoAbordado.Name = "txtArtigoAbordado";
             this.txtArtigoAbordado.Size = new System.Drawing.Size(94, 24);
@@ -601,6 +750,7 @@
             // 
             // txtRgAbordado
             // 
+            this.txtRgAbordado.BackColor = System.Drawing.SystemColors.Control;
             this.txtRgAbordado.Location = new System.Drawing.Point(397, 30);
             this.txtRgAbordado.Name = "txtRgAbordado";
             this.txtRgAbordado.Size = new System.Drawing.Size(113, 24);
@@ -608,6 +758,7 @@
             // 
             // txtNomeAbordado
             // 
+            this.txtNomeAbordado.BackColor = System.Drawing.SystemColors.Control;
             this.txtNomeAbordado.Location = new System.Drawing.Point(96, 30);
             this.txtNomeAbordado.Name = "txtNomeAbordado";
             this.txtNomeAbordado.Size = new System.Drawing.Size(254, 24);
@@ -670,153 +821,21 @@
             this.dgvAbordados.Size = new System.Drawing.Size(529, 179);
             this.dgvAbordados.TabIndex = 93;
             // 
-            // label6
+            // pictureBox1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(229, 218);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 18);
-            this.label6.TabIndex = 122;
-            this.label6.Text = "KM percorrido:";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(404, 218);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(59, 18);
-            this.label24.TabIndex = 123;
-            this.label24.Text = "120 KM";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label34);
-            this.groupBox1.Controls.Add(this.label33);
-            this.groupBox1.Controls.Add(this.label32);
-            this.groupBox1.Controls.Add(this.label31);
-            this.groupBox1.Controls.Add(this.groupBox8);
-            this.groupBox1.Controls.Add(this.label29);
-            this.groupBox1.Controls.Add(this.label30);
-            this.groupBox1.Controls.Add(this.label28);
-            this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Location = new System.Drawing.Point(487, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(328, 303);
-            this.groupBox1.TabIndex = 124;
-            this.groupBox1.TabStop = false;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.ForeColor = System.Drawing.Color.Lime;
-            this.label25.Location = new System.Drawing.Point(206, 48);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(30, 18);
-            this.label25.TabIndex = 126;
-            this.label25.Text = "OK";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(72, 48);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(104, 18);
-            this.label26.TabIndex = 125;
-            this.label26.Text = "Troca de óleo:";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(78, 80);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(98, 18);
-            this.label27.TabIndex = 127;
-            this.label27.Text = "Filtro de óleo:";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.ForeColor = System.Drawing.Color.Lime;
-            this.label28.Location = new System.Drawing.Point(206, 80);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(30, 18);
-            this.label28.TabIndex = 128;
-            this.label28.Text = "OK";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.ForeColor = System.Drawing.Color.Lime;
-            this.label29.Location = new System.Drawing.Point(206, 114);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(30, 18);
-            this.label29.TabIndex = 130;
-            this.label29.Text = "OK";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(28, 114);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(148, 18);
-            this.label30.TabIndex = 129;
-            this.label30.Text = "Filtro de combustível:";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Location = new System.Drawing.Point(125, 167);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(80, 108);
-            this.groupBox8.TabIndex = 131;
-            this.groupBox8.TabStop = false;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.Color.Lime;
-            this.label31.Location = new System.Drawing.Point(206, 188);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(30, 18);
-            this.label31.TabIndex = 132;
-            this.label31.Text = "OK";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.ForeColor = System.Drawing.Color.Lime;
-            this.label32.Location = new System.Drawing.Point(89, 188);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(30, 18);
-            this.label32.TabIndex = 133;
-            this.label32.Text = "OK";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.ForeColor = System.Drawing.Color.Lime;
-            this.label33.Location = new System.Drawing.Point(89, 245);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(30, 18);
-            this.label33.TabIndex = 134;
-            this.label33.Text = "OK";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.ForeColor = System.Drawing.Color.Lime;
-            this.label34.Location = new System.Drawing.Point(206, 245);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(30, 18);
-            this.label34.TabIndex = 135;
-            this.label34.Text = "OK";
+            this.pictureBox1.Image = global::ControleFrota.Properties.Resources.veiculo;
+            this.pictureBox1.Location = new System.Drawing.Point(117, 147);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 136;
+            this.pictureBox1.TabStop = false;
             // 
             // frmEquipes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
@@ -831,6 +850,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvViaturas)).EndInit();
             this.groupBox4.ResumeLayout(false);
@@ -843,8 +864,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAbordados)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -920,6 +940,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

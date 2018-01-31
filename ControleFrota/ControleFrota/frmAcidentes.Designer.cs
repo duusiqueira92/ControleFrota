@@ -39,7 +39,6 @@
             this.chkFrontalEsquerda = new System.Windows.Forms.CheckBox();
             this.chkFrontal = new System.Windows.Forms.CheckBox();
             this.chkFrontalDireita = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTipoAcidente = new System.Windows.Forms.ComboBox();
             this.cmbTipoPista = new System.Windows.Forms.ComboBox();
@@ -66,13 +65,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.chkLateralTrasEsquerda);
             this.groupBox1.Controls.Add(this.chkLateralEsquerda);
             this.groupBox1.Controls.Add(this.chkLateralTrasDireita);
@@ -83,7 +85,6 @@
             this.groupBox1.Controls.Add(this.chkFrontalEsquerda);
             this.groupBox1.Controls.Add(this.chkFrontal);
             this.groupBox1.Controls.Add(this.chkFrontalDireita);
-            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(246, 115);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(340, 172);
@@ -175,19 +176,11 @@
             // chkFrontalDireita
             // 
             this.chkFrontalDireita.AutoSize = true;
-            this.chkFrontalDireita.Location = new System.Drawing.Point(74, 23);
+            this.chkFrontalDireita.Location = new System.Drawing.Point(75, 24);
             this.chkFrontalDireita.Name = "chkFrontalDireita";
             this.chkFrontalDireita.Size = new System.Drawing.Size(15, 14);
             this.chkFrontalDireita.TabIndex = 1;
             this.chkFrontalDireita.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Location = new System.Drawing.Point(95, 41);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(172, 93);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
             // 
             // label1
             // 
@@ -272,6 +265,7 @@
             // 
             // txtPontoImpacto
             // 
+            this.txtPontoImpacto.BackColor = System.Drawing.SystemColors.Control;
             this.txtPontoImpacto.Location = new System.Drawing.Point(486, 24);
             this.txtPontoImpacto.Name = "txtPontoImpacto";
             this.txtPontoImpacto.Size = new System.Drawing.Size(70, 24);
@@ -279,6 +273,7 @@
             // 
             // txtAno
             // 
+            this.txtAno.BackColor = System.Drawing.SystemColors.Control;
             this.txtAno.Location = new System.Drawing.Point(95, 249);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(126, 24);
@@ -286,6 +281,7 @@
             // 
             // txtCor
             // 
+            this.txtCor.BackColor = System.Drawing.SystemColors.Control;
             this.txtCor.Location = new System.Drawing.Point(95, 219);
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(126, 24);
@@ -293,6 +289,7 @@
             // 
             // txtChassi
             // 
+            this.txtChassi.BackColor = System.Drawing.SystemColors.Control;
             this.txtChassi.Location = new System.Drawing.Point(95, 187);
             this.txtChassi.Name = "txtChassi";
             this.txtChassi.Size = new System.Drawing.Size(126, 24);
@@ -300,6 +297,7 @@
             // 
             // txtCidade
             // 
+            this.txtCidade.BackColor = System.Drawing.SystemColors.Control;
             this.txtCidade.Location = new System.Drawing.Point(95, 123);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(126, 24);
@@ -307,6 +305,7 @@
             // 
             // txtPlaca
             // 
+            this.txtPlaca.BackColor = System.Drawing.SystemColors.Control;
             this.txtPlaca.Location = new System.Drawing.Point(130, 90);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(91, 24);
@@ -314,6 +313,7 @@
             // 
             // txtModelo
             // 
+            this.txtModelo.BackColor = System.Drawing.SystemColors.Control;
             this.txtModelo.Location = new System.Drawing.Point(95, 56);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(126, 24);
@@ -321,6 +321,7 @@
             // 
             // txtMarca
             // 
+            this.txtMarca.BackColor = System.Drawing.SystemColors.Control;
             this.txtMarca.Location = new System.Drawing.Point(95, 24);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(126, 24);
@@ -434,10 +435,22 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Marca:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::ControleFrota.Properties.Resources.veiculoAcidente;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmAcidentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(642, 415);
             this.Controls.Add(this.groupBox3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -455,6 +468,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -468,7 +482,6 @@
         private System.Windows.Forms.CheckBox chkFrontalEsquerda;
         private System.Windows.Forms.CheckBox chkFrontal;
         private System.Windows.Forms.CheckBox chkFrontalDireita;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox chkLateralTrasEsquerda;
         private System.Windows.Forms.CheckBox chkLateralEsquerda;
@@ -499,5 +512,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

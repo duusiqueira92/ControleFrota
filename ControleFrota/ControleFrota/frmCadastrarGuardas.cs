@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BLL;
+using DAL;
+using DAL.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +19,7 @@ namespace ControleFrota
         {
             InitializeComponent();
         }
+        private readonly IGraduacaoRepository _graduacaoReposiroty;
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -32,6 +36,16 @@ namespace ControleFrota
         {
             frmCadastrarColete frmCadColete = new frmCadastrarColete();
             frmCadColete.ShowDialog();
+        }
+        private void cmbGraduacao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbGraduacao.Text == "cadastrar")
+            {
+                Graduacao grad = new Graduacao();
+                grad.Nome_graduacao = "3 classe";
+                GraduacaoBLL novaGrad = new GraduacaoBLL(_graduacaoReposiroty);
+                novaGrad.AdicionarFuncionario(grad);
+            }
         }
     }
 }

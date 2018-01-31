@@ -12,3 +12,6 @@ C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\bin\De
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.dll
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\obj\Debug\BLL.pdb
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\bin\Debug\MySql.Data.dll
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\bin\Debug\Google.Protobuf.dll
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\BLL\bin\Debug\MySql.Data.xml

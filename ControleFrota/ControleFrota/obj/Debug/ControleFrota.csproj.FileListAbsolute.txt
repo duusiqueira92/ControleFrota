@@ -38,3 +38,6 @@ C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFr
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmAcidentes.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmGerenciarPlantao.resources
 C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\obj\Debug\ControleFrota.frmApreensao.resources
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\bin\Debug\MySql.Data.dll
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\bin\Debug\Google.Protobuf.dll
+C:\Users\duhsi\OneDrive\Documentos\GitHub\ControleFrota\ControleFrota\ControleFrota\bin\Debug\MySql.Data.xml

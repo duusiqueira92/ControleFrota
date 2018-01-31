@@ -21,5 +21,12 @@ namespace DAL
             get { return nome_graduacao; }
             set { nome_graduacao = value; }
         }
+
+        private string descricao;
+        public string Descricao
+        {
+            get { return descricao; }
+            set { descricao = value; }
+        }
     }
 }

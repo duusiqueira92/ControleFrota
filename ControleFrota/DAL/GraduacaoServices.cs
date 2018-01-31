@@ -5,6 +5,7 @@ namespace DAL
 {
     public class GraduacaoServices : IGraduacaoServices
     {
+       
         private readonly IGraduacaoRepository _graduacaoRepository;
         public GraduacaoServices(IGraduacaoRepository graduacaoRepository)
         {
@@ -12,7 +13,8 @@ namespace DAL
         }
         public string CadastrarGraduacao(Graduacao graduacao)
         {
-            _graduacaoRepository.CadastrarGraduacao(graduacao);
+            GraduacaoRepository repo = new GraduacaoRepository();
+            repo.CadastrarGraduacao(graduacao);
             return "Graduação cadastrada com sucesso!";
         }
     }

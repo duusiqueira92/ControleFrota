@@ -55,6 +55,7 @@
     <Compile Include="ColisaoRepository.cs" />
     <Compile Include="ColisaoServices.cs" />
     <Compile Include="CpfServices.cs" />
+    <Compile Include="DataBaseAcess.cs" />
     <Compile Include="EmplacamentoServices.cs" />
     <Compile Include="Equipe.cs" />
     <Compile Include="EquipeRepository.cs" />
