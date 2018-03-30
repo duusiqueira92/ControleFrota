@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAcidentes));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chkLateralTrasEsquerda = new System.Windows.Forms.CheckBox();
             this.chkLateralEsquerda = new System.Windows.Forms.CheckBox();
             this.chkLateralTrasDireita = new System.Windows.Forms.CheckBox();
@@ -44,6 +46,11 @@
             this.cmbTipoPista = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnVoltar = new System.Windows.Forms.ToolStripButton();
+            this.btnSalvar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtPontoImpacto = new System.Windows.Forms.TextBox();
             this.txtAno = new System.Windows.Forms.TextBox();
@@ -65,11 +72,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -90,7 +97,17 @@
             this.groupBox1.Size = new System.Drawing.Size(340, 172);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::ControleFrota.Properties.Resources.veiculoAcidente;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // chkLateralTrasEsquerda
             // 
@@ -98,8 +115,9 @@
             this.chkLateralTrasEsquerda.Location = new System.Drawing.Point(205, 140);
             this.chkLateralTrasEsquerda.Name = "chkLateralTrasEsquerda";
             this.chkLateralTrasEsquerda.Size = new System.Drawing.Size(15, 14);
-            this.chkLateralTrasEsquerda.TabIndex = 10;
+            this.chkLateralTrasEsquerda.TabIndex = 6;
             this.chkLateralTrasEsquerda.UseVisualStyleBackColor = true;
+            this.chkLateralTrasEsquerda.CheckedChanged += new System.EventHandler(this.chkLateralTrasEsquerda_CheckedChanged);
             // 
             // chkLateralEsquerda
             // 
@@ -107,8 +125,9 @@
             this.chkLateralEsquerda.Location = new System.Drawing.Point(137, 140);
             this.chkLateralEsquerda.Name = "chkLateralEsquerda";
             this.chkLateralEsquerda.Size = new System.Drawing.Size(15, 14);
-            this.chkLateralEsquerda.TabIndex = 9;
+            this.chkLateralEsquerda.TabIndex = 7;
             this.chkLateralEsquerda.UseVisualStyleBackColor = true;
+            this.chkLateralEsquerda.CheckedChanged += new System.EventHandler(this.chkLateralEsquerda_CheckedChanged);
             // 
             // chkLateralTrasDireita
             // 
@@ -116,8 +135,9 @@
             this.chkLateralTrasDireita.Location = new System.Drawing.Point(205, 23);
             this.chkLateralTrasDireita.Name = "chkLateralTrasDireita";
             this.chkLateralTrasDireita.Size = new System.Drawing.Size(15, 14);
-            this.chkLateralTrasDireita.TabIndex = 8;
+            this.chkLateralTrasDireita.TabIndex = 2;
             this.chkLateralTrasDireita.UseVisualStyleBackColor = true;
+            this.chkLateralTrasDireita.CheckedChanged += new System.EventHandler(this.chkLateralTrasDireita_CheckedChanged);
             // 
             // chkLateralDireita
             // 
@@ -125,8 +145,9 @@
             this.chkLateralDireita.Location = new System.Drawing.Point(137, 23);
             this.chkLateralDireita.Name = "chkLateralDireita";
             this.chkLateralDireita.Size = new System.Drawing.Size(15, 14);
-            this.chkLateralDireita.TabIndex = 7;
+            this.chkLateralDireita.TabIndex = 1;
             this.chkLateralDireita.UseVisualStyleBackColor = true;
+            this.chkLateralDireita.CheckedChanged += new System.EventHandler(this.chkLateralDireita_CheckedChanged);
             // 
             // chkTraseiraEsquerda
             // 
@@ -134,8 +155,9 @@
             this.chkTraseiraEsquerda.Location = new System.Drawing.Point(272, 140);
             this.chkTraseiraEsquerda.Name = "chkTraseiraEsquerda";
             this.chkTraseiraEsquerda.Size = new System.Drawing.Size(15, 14);
-            this.chkTraseiraEsquerda.TabIndex = 6;
+            this.chkTraseiraEsquerda.TabIndex = 5;
             this.chkTraseiraEsquerda.UseVisualStyleBackColor = true;
+            this.chkTraseiraEsquerda.CheckedChanged += new System.EventHandler(this.chkTraseiraEsquerda_CheckedChanged);
             // 
             // chkTraseira
             // 
@@ -143,8 +165,9 @@
             this.chkTraseira.Location = new System.Drawing.Point(273, 81);
             this.chkTraseira.Name = "chkTraseira";
             this.chkTraseira.Size = new System.Drawing.Size(15, 14);
-            this.chkTraseira.TabIndex = 5;
+            this.chkTraseira.TabIndex = 4;
             this.chkTraseira.UseVisualStyleBackColor = true;
+            this.chkTraseira.CheckedChanged += new System.EventHandler(this.chkTraseira_CheckedChanged);
             // 
             // chkTraseiraDireita
             // 
@@ -152,8 +175,9 @@
             this.chkTraseiraDireita.Location = new System.Drawing.Point(272, 23);
             this.chkTraseiraDireita.Name = "chkTraseiraDireita";
             this.chkTraseiraDireita.Size = new System.Drawing.Size(15, 14);
-            this.chkTraseiraDireita.TabIndex = 4;
+            this.chkTraseiraDireita.TabIndex = 3;
             this.chkTraseiraDireita.UseVisualStyleBackColor = true;
+            this.chkTraseiraDireita.CheckedChanged += new System.EventHandler(this.chkTraseiraDireita_CheckedChanged);
             // 
             // chkFrontalEsquerda
             // 
@@ -161,8 +185,9 @@
             this.chkFrontalEsquerda.Location = new System.Drawing.Point(74, 140);
             this.chkFrontalEsquerda.Name = "chkFrontalEsquerda";
             this.chkFrontalEsquerda.Size = new System.Drawing.Size(15, 14);
-            this.chkFrontalEsquerda.TabIndex = 3;
+            this.chkFrontalEsquerda.TabIndex = 8;
             this.chkFrontalEsquerda.UseVisualStyleBackColor = true;
+            this.chkFrontalEsquerda.CheckedChanged += new System.EventHandler(this.chkFrontalEsquerda_CheckedChanged);
             // 
             // chkFrontal
             // 
@@ -170,8 +195,9 @@
             this.chkFrontal.Location = new System.Drawing.Point(74, 81);
             this.chkFrontal.Name = "chkFrontal";
             this.chkFrontal.Size = new System.Drawing.Size(15, 14);
-            this.chkFrontal.TabIndex = 2;
+            this.chkFrontal.TabIndex = 9;
             this.chkFrontal.UseVisualStyleBackColor = true;
+            this.chkFrontal.CheckedChanged += new System.EventHandler(this.chkFrontal_CheckedChanged);
             // 
             // chkFrontalDireita
             // 
@@ -179,8 +205,9 @@
             this.chkFrontalDireita.Location = new System.Drawing.Point(75, 24);
             this.chkFrontalDireita.Name = "chkFrontalDireita";
             this.chkFrontalDireita.Size = new System.Drawing.Size(15, 14);
-            this.chkFrontalDireita.TabIndex = 1;
+            this.chkFrontalDireita.TabIndex = 0;
             this.chkFrontalDireita.UseVisualStyleBackColor = true;
+            this.chkFrontalDireita.CheckedChanged += new System.EventHandler(this.chkFrontalDireita_CheckedChanged);
             // 
             // label1
             // 
@@ -195,19 +222,29 @@
             // 
             this.cmbTipoAcidente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoAcidente.FormattingEnabled = true;
+            this.cmbTipoAcidente.Items.AddRange(new object[] {
+            "Colisão",
+            "Choque",
+            "Capotamento",
+            "Atropelamento"});
             this.cmbTipoAcidente.Location = new System.Drawing.Point(138, 23);
             this.cmbTipoAcidente.Name = "cmbTipoAcidente";
             this.cmbTipoAcidente.Size = new System.Drawing.Size(136, 26);
-            this.cmbTipoAcidente.TabIndex = 11;
+            this.cmbTipoAcidente.TabIndex = 0;
             // 
             // cmbTipoPista
             // 
             this.cmbTipoPista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoPista.FormattingEnabled = true;
+            this.cmbTipoPista.Items.AddRange(new object[] {
+            "Asfalto",
+            "Terra",
+            "Lajota",
+            "Paralelepipedo"});
             this.cmbTipoPista.Location = new System.Drawing.Point(435, 23);
             this.cmbTipoPista.Name = "cmbTipoPista";
             this.cmbTipoPista.Size = new System.Drawing.Size(136, 26);
-            this.cmbTipoPista.TabIndex = 13;
+            this.cmbTipoPista.TabIndex = 1;
             // 
             // label2
             // 
@@ -220,6 +257,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.toolStrip1);
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.cmbTipoAcidente);
             this.groupBox3.Controls.Add(this.cmbTipoPista);
@@ -231,6 +269,54 @@
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Acidente";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnVoltar,
+            this.btnSalvar,
+            this.toolStripSeparator1,
+            this.toolStripSeparator2});
+            this.toolStrip1.Location = new System.Drawing.Point(3, 355);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(615, 38);
+            this.toolStrip1.TabIndex = 15;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
+            this.btnVoltar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnVoltar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(41, 35);
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnVoltar.ToolTipText = "Voltar ao menu anterior";
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
+            this.btnSalvar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(42, 35);
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 38);
             // 
             // groupBox4
             // 
@@ -261,7 +347,6 @@
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Informações do veículo";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // txtPontoImpacto
             // 
@@ -269,7 +354,7 @@
             this.txtPontoImpacto.Location = new System.Drawing.Point(486, 24);
             this.txtPontoImpacto.Name = "txtPontoImpacto";
             this.txtPontoImpacto.Size = new System.Drawing.Size(70, 24);
-            this.txtPontoImpacto.TabIndex = 33;
+            this.txtPontoImpacto.TabIndex = 8;
             // 
             // txtAno
             // 
@@ -277,7 +362,7 @@
             this.txtAno.Location = new System.Drawing.Point(95, 249);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(126, 24);
-            this.txtAno.TabIndex = 32;
+            this.txtAno.TabIndex = 7;
             // 
             // txtCor
             // 
@@ -285,7 +370,7 @@
             this.txtCor.Location = new System.Drawing.Point(95, 219);
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(126, 24);
-            this.txtCor.TabIndex = 31;
+            this.txtCor.TabIndex = 6;
             // 
             // txtChassi
             // 
@@ -293,7 +378,7 @@
             this.txtChassi.Location = new System.Drawing.Point(95, 187);
             this.txtChassi.Name = "txtChassi";
             this.txtChassi.Size = new System.Drawing.Size(126, 24);
-            this.txtChassi.TabIndex = 30;
+            this.txtChassi.TabIndex = 5;
             // 
             // txtCidade
             // 
@@ -301,7 +386,7 @@
             this.txtCidade.Location = new System.Drawing.Point(95, 123);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(126, 24);
-            this.txtCidade.TabIndex = 29;
+            this.txtCidade.TabIndex = 3;
             // 
             // txtPlaca
             // 
@@ -309,7 +394,7 @@
             this.txtPlaca.Location = new System.Drawing.Point(130, 90);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(91, 24);
-            this.txtPlaca.TabIndex = 28;
+            this.txtPlaca.TabIndex = 2;
             // 
             // txtModelo
             // 
@@ -317,7 +402,7 @@
             this.txtModelo.Location = new System.Drawing.Point(95, 56);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(126, 24);
-            this.txtModelo.TabIndex = 27;
+            this.txtModelo.TabIndex = 1;
             // 
             // txtMarca
             // 
@@ -325,7 +410,7 @@
             this.txtMarca.Location = new System.Drawing.Point(95, 24);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(126, 24);
-            this.txtMarca.TabIndex = 26;
+            this.txtMarca.TabIndex = 0;
             // 
             // cmbUf
             // 
@@ -334,7 +419,7 @@
             this.cmbUf.Location = new System.Drawing.Point(161, 155);
             this.cmbUf.Name = "cmbUf";
             this.cmbUf.Size = new System.Drawing.Size(60, 26);
-            this.cmbUf.TabIndex = 25;
+            this.cmbUf.TabIndex = 4;
             // 
             // label12
             // 
@@ -349,10 +434,14 @@
             // 
             this.cmbDanos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDanos.FormattingEnabled = true;
+            this.cmbDanos.Items.AddRange(new object[] {
+            "Pequena monta",
+            "Média monta",
+            "Grande monta"});
             this.cmbDanos.Location = new System.Drawing.Point(420, 56);
             this.cmbDanos.Name = "cmbDanos";
             this.cmbDanos.Size = new System.Drawing.Size(136, 26);
-            this.cmbDanos.TabIndex = 15;
+            this.cmbDanos.TabIndex = 9;
             // 
             // label11
             // 
@@ -435,17 +524,6 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Marca:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::ControleFrota.Properties.Resources.veiculoAcidente;
-            this.pictureBox1.Location = new System.Drawing.Point(92, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmAcidentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -462,13 +540,16 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Informar Acidente";
+            this.Load += new System.EventHandler(this.frmAcidentes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -513,5 +594,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton btnVoltar;
+        private System.Windows.Forms.ToolStripButton btnSalvar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }

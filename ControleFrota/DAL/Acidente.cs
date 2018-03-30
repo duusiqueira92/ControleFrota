@@ -1,10 +1,10 @@
 ﻿
 namespace DAL
 {
-    public class Acidente
+    public class Acidente : Colisao
     {
-        public Acidente(string tipoAcidente, string tipoPista, string marca, string modelo, string placa, string uf, string municipio,
-                        string chassi, string cor, string ano, string pontosImpacto, string danos)
+        public Acidente(string tipoAcidente, string tipoPista, string marca, string modelo, string placa, int uf, string municipio,
+                        string chassi, string cor, string ano, string pontosImpacto, string danos, int idBoletim)
         {
             this.tipoAcidente = tipoAcidente;
             this.tipoPista = tipoPista;
@@ -17,101 +17,21 @@ namespace DAL
             this.ano = ano;
             this.pontosImpacto = pontosImpacto;
             this.danos = danos;
+            this.idBoletim = idBoletim;
         }
 
-        public Acidente(string tipoAcidente, string tipoPista, string marca, string modelo, string placa, string uf, string municipio,
-                        string chassi, string cor, string ano, string pontosImpacto, string danos, Colisao colisaoFrontal)
+        public Acidente()
         {
-            this.tipoAcidente = tipoAcidente;
-            this.tipoPista = tipoPista;
-            this.marca = marca;
-            this.modelo = modelo;
-            this.uf = uf;
-            this.municipio = municipio;
-            this.chassi = chassi;
-            this.cor = cor;
-            this.ano = ano;
-            this.pontosImpacto = pontosImpacto;
-            this.danos = danos;
-            this.colisaoFrontal = colisaoFrontal;
+
         }
 
-        private Colisao colisaoFrontal;
-        public Colisao ColisaoFrontal
+        private int idBoletim;
+        public int IdBoletim
         {
-            get { return colisaoFrontal; }
-            private set { colisaoFrontal = value; }
+            get { return idBoletim; }
+            set { idBoletim = value; }
         }
 
-        private Colisao colisaoFrontalDireita;
-        public Colisao ColisaoFrontalDireita
-        {
-            get { return colisaoFrontalDireita; }
-            private set { colisaoFrontalDireita = value; }
-        }
-
-        private Colisao colisaoFrontalEsquerda;
-        public Colisao ColisaoFrontalEsquerda
-        {
-            get { return colisaoFrontalEsquerda; }
-            private set { colisaoFrontalEsquerda = value; }
-        }
-
-        private Colisao colisaoTraseira;
-        public Colisao ColisaoTraseira
-        {
-            get { return colisaoTraseira; }
-            private set { colisaoTraseira = value; }
-        }
-
-        private Colisao colisaoTraseiraDireita;
-        public Colisao ColisaoTraseiraDireita
-        {
-            get { return colisaoTraseiraDireita; }
-            private set { colisaoTraseiraDireita = value; }
-        }
-
-        private Colisao colisaoTraseiraEsquerda;
-        public Colisao ColisaoTraseiraEsquerda
-        {
-            get { return colisaoTraseiraEsquerda; }
-            private set { colisaoTraseiraEsquerda = value; }
-        }
-
-        private Colisao colisaoLateralDireita;
-        public Colisao ColisaoLateralDireita
-        {
-            get { return colisaoLateralDireita; }
-            private set { colisaoLateralDireita = value; }
-        }
-
-        private Colisao colisaoLateralEsquerda;
-        public Colisao ColisaoLateralEsquerda
-        {
-            get { return colisaoLateralEsquerda; }
-            private set { colisaoLateralEsquerda = value; }
-        }
-
-        private Colisao colisaoLateralTrasDireita;
-        public Colisao ColisaoLateralTrasDireita
-        {
-            get { return colisaoLateralTrasDireita; }
-            private set { colisaoLateralTrasDireita = value; }
-        }
-
-        private Colisao colisaoLateralTrasEsquerda;
-        public Colisao ColisaoLateralTrasEsquerda
-        {
-            get { return colisaoLateralTrasEsquerda; }
-            private set { colisaoLateralTrasEsquerda = value; }
-        }
-
-        private int id;
-        public int Id
-        {
-            get { return id; }
-            private set { id = value; }
-        }
 
         private string tipoAcidente;
         public string TipoAcidente
@@ -148,8 +68,8 @@ namespace DAL
             set { placa = value; }
         }
 
-        private string uf;
-        public string Uf
+        private int uf;
+        public int Uf
         {
             get { return uf; }
             set { uf = value; }

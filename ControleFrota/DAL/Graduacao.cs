@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace DAL
 {
     public class Graduacao
     {
+
         private int id_graduacao;
         public int Id_graduacao
         {

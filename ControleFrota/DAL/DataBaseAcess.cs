@@ -54,11 +54,13 @@ namespace DAL
 
         public MySqlDataReader RetDataReader(string sql)
         {
-            MySqlCommand comando = new MySqlCommand();
+            MySqlCommand comando = new MySqlCommand(sql, conn);
             MySqlDataReader dr = comando.ExecuteReader();
-            dr.Read();
-            data.Load(dr);
-
+            Abordado abordado = new Abordado();
+            while (dr.Read())
+            {
+                return dr;
+            }
             return dr;
         }
     }

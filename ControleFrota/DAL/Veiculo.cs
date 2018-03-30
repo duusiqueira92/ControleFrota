@@ -4,7 +4,7 @@ namespace DAL
 {
     public class Veiculo
     {
-        private readonly IEmplacamentoServices _emplacamentoServices;
+        IEmplacamentoServices _emplacamentoServices;
 
         public Veiculo(IEmplacamentoServices emplacamentoServices)
         {
@@ -15,7 +15,7 @@ namespace DAL
         public int Id_veiculo
         {
             get { return id_veiculo; }
-            private set { id_veiculo = value; }
+            set { id_veiculo = value; }
         }
 
         private string modelo;
@@ -25,6 +25,13 @@ namespace DAL
             set { modelo = value; }
         }
 
+        private string marca;
+        public string Marca
+        {
+            get { return marca; }
+            set { marca = value; }
+        }
+
         private string placa;
         public string Placa
         {
@@ -32,11 +39,67 @@ namespace DAL
             set { placa = value; }
         }
 
-        private string ano;
-        public string Ano
+        private string anoFabricacao;
+        public string AnoFabricacao
         {
-            get { return ano; }
-            set { ano = value; }
+            get { return anoFabricacao; }
+            set { anoFabricacao = value; }
+        }
+
+        private string anoModelo;
+        public string AnoModelo
+        {
+            get { return anoModelo; }
+            set { anoModelo = value; }
+        }
+
+        private string municipio;
+        public string Municipio
+        {
+            get { return municipio; }
+            set { municipio = value; }
+        }
+
+        private string renavam;
+        public string Renavam
+        {
+            get { return renavam; }
+            set { renavam = value; }
+        }
+
+        private string dpvat;
+        public string Dpvat
+        {
+            get { return dpvat; }
+            set { dpvat = value; }
+        }
+
+        private string licenciamento;
+        public string Licenciamento
+        {
+            get { return licenciamento; }
+            set { licenciamento = value; }
+        }
+
+        private string chassi;
+        public string Chassi
+        {
+            get { return chassi; }
+            set { chassi = value; }
+        }
+
+        private int uf;
+        public int UF
+        {
+            get { return uf; }
+            set { uf = value; }
+        }
+
+        private int combustivel;
+        public int Combustivel
+        {
+            get { return combustivel; }
+            set { combustivel = value; }
         }
 
         private string prefixo;
@@ -44,6 +107,13 @@ namespace DAL
         {
             get { return prefixo; }
             set { prefixo = value; }
+        }
+
+        private string observacao;
+        public string Observacao
+        {
+            get { return observacao; }
+            set { observacao = value; }
         }
 
         private int km;
@@ -54,6 +124,7 @@ namespace DAL
         }
         public bool ValidarPlaca()
         {
+            _emplacamentoServices = new EmplacamentoServices();
             return _emplacamentoServices.ValidarPlaca(Placa);
         }
     }

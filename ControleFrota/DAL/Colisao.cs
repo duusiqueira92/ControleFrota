@@ -6,80 +6,80 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class Colisao
+    public abstract class Colisao
     {
         private int id;
         public int Id
         {
             get { return id; }
-            private set { id = value; }
+            set { id = value; }
         }
 
-        private bool colisaoFrontal;
-        public bool ColisaoFrontal
+        private int colisaoFrontal;
+        public int ColisaoFrontal
         {
             get { return colisaoFrontal; }
             set { colisaoFrontal = value; }
         }
 
-        private bool colisaoFrontalDireita;
-        public bool ColisaoFrontalDireita
+        private int colisaoFrontalDireita;
+        public int ColisaoFrontalDireita
         {
             get { return colisaoFrontalDireita; }
             set { colisaoFrontalDireita = value; }
         }
 
-        private bool colisaoFrontalEsquerda;
-        public bool ColisaoFrontalEsquerda
+        private int colisaoFrontalEsquerda;
+        public int ColisaoFrontalEsquerda
         {
             get { return colisaoFrontalEsquerda; }
             set { colisaoFrontalEsquerda = value; }
         }
 
-        private bool colisaoLateralDireita;
-        public bool ColisaoLateralDireita
+        private int colisaoLateralDireita;
+        public int ColisaoLateralDireita
         {
             get { return colisaoLateralDireita; }
             set { colisaoLateralDireita = value; }
         }
 
-        private bool colisaoLateralTrasDireita;
-        public bool ColisaoLateralTrasDireita
+        private int colisaoLateralTrasDireita;
+        public int ColisaoLateralTrasDireita
         {
             get { return colisaoLateralTrasDireita; }
             set { colisaoLateralTrasDireita = value; }
         }
 
-        private bool colisaoLateralEsquerda;
-        public bool ColisaoLateralEsquerda
+        private int colisaoLateralEsquerda;
+        public int ColisaoLateralEsquerda
         {
             get { return colisaoLateralEsquerda; }
             set { colisaoLateralEsquerda = value; }
         }
 
-        private bool colisaoLateralTrasEsquerda;
-        public bool ColisaoLateraTraslEsquerda
+        private int colisaoLateralTrasEsquerda;
+        public int ColisaoLateralTrasEsquerda
         {
             get { return colisaoLateralTrasEsquerda; }
             set { colisaoLateralTrasEsquerda = value; }
         }
 
-        private bool colisaoTraseira;
-        public bool ColisaoTraseira
+        private int colisaoTraseira;
+        public int ColisaoTraseira
         {
             get { return colisaoTraseira; }
             set { colisaoTraseira = value; }
         }
 
-        private bool colisaoTraseiraDireita;
-        public bool ColisaoTraseiraDireita
+        private int colisaoTraseiraDireita;
+        public int ColisaoTraseiraDireita
         {
             get { return colisaoTraseiraDireita; }
             set { colisaoTraseiraDireita = value; }
         }
 
-        private bool colisaoTraseiraEsquerda;
-        public bool ColisaoTraseiraEsquerda
+        private int colisaoTraseiraEsquerda;
+        public int ColisaoTraseiraEsquerda
         {
             get { return colisaoTraseiraEsquerda; }
             set { colisaoTraseiraEsquerda = value; }

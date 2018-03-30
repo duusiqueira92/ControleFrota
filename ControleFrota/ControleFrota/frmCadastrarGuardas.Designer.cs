@@ -31,7 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastrarGuardas));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEquipamentos = new System.Windows.Forms.DataGridView();
+            this.a_nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.a_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.a_qra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.a_validade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_validade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.a_modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.btnColete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
@@ -41,103 +47,157 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnInformarApreensao = new System.Windows.Forms.ToolStripButton();
+            this.btnLimpar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnAcidentes = new System.Windows.Forms.ToolStripButton();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.btnAlterar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.cmbRestricao = new System.Windows.Forms.ComboBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.cmbTipoSanguineo = new System.Windows.Forms.ComboBox();
+            this.txtObservacao = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.txtConclusaoSuperior = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.txtFormacaoMedio = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.txtInstituicao = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.cmbFilhos = new System.Windows.Forms.ComboBox();
+            this.cmbUfNaturalidade = new System.Windows.Forms.ComboBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.txtComplemento = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.txtCep = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cmbUfProf = new System.Windows.Forms.ComboBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.cmbFormacao = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.cmbGraduacao = new System.Windows.Forms.ComboBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.txtRf = new System.Windows.Forms.TextBox();
+            this.cmbEscolaridade = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
+            this.txtQra = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.txtPasep = new System.Windows.Forms.TextBox();
+            this.dtpDataAdmissao = new System.Windows.Forms.DateTimePicker();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtNomeMae = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtNomePai = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtNaturalidade = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtCidadeTitulo = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dtpEmissaoTitulo = new System.Windows.Forms.DateTimePicker();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtSessao = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtZona = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtTitEleitor = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpValidadeCnh = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtRegCnh = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtNumCnh = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpRgExpedido = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbOeUF = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbUf = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbOrgEmissor = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtRg = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCelular = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvGuardas = new System.Windows.Forms.DataGridView();
+            this.id_agente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.complemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.num_cnh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reg_cnh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.validade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tit_eleitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cidade_tit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zona = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado_titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sessao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emissao_titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emissao_rg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado_rg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emissor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.data_nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado_civil = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.filhos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.escolaridade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ano_conclusao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.instituicao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_sanguineo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.restricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.obs_restricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mae = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.naturalidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.naturalidade_estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reg_funcional = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.data_admissao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.graduacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plantao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.equipe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.posicao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.conclusao_formacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label46 = new System.Windows.Forms.Label();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnCadastrarGraduacao = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEquipamentos)).BeginInit();
             this.toolStrip2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGuardas)).BeginInit();
@@ -145,97 +205,98 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label46);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.toolStrip1);
-            this.groupBox1.Controls.Add(this.comboBox13);
+            this.groupBox1.Controls.Add(this.cmbRestricao);
             this.groupBox1.Controls.Add(this.label45);
             this.groupBox1.Controls.Add(this.label44);
-            this.groupBox1.Controls.Add(this.comboBox12);
-            this.groupBox1.Controls.Add(this.textBox27);
+            this.groupBox1.Controls.Add(this.cmbTipoSanguineo);
+            this.groupBox1.Controls.Add(this.txtObservacao);
             this.groupBox1.Controls.Add(this.label43);
-            this.groupBox1.Controls.Add(this.textBox26);
+            this.groupBox1.Controls.Add(this.txtConclusaoSuperior);
             this.groupBox1.Controls.Add(this.label42);
-            this.groupBox1.Controls.Add(this.textBox25);
+            this.groupBox1.Controls.Add(this.txtFormacaoMedio);
             this.groupBox1.Controls.Add(this.label41);
-            this.groupBox1.Controls.Add(this.textBox24);
+            this.groupBox1.Controls.Add(this.txtInstituicao);
             this.groupBox1.Controls.Add(this.label40);
             this.groupBox1.Controls.Add(this.label39);
-            this.groupBox1.Controls.Add(this.comboBox11);
-            this.groupBox1.Controls.Add(this.comboBox10);
+            this.groupBox1.Controls.Add(this.cmbFilhos);
+            this.groupBox1.Controls.Add(this.cmbUfNaturalidade);
             this.groupBox1.Controls.Add(this.label38);
-            this.groupBox1.Controls.Add(this.textBox22);
+            this.groupBox1.Controls.Add(this.txtComplemento);
             this.groupBox1.Controls.Add(this.label28);
-            this.groupBox1.Controls.Add(this.textBox23);
+            this.groupBox1.Controls.Add(this.txtCep);
             this.groupBox1.Controls.Add(this.label37);
-            this.groupBox1.Controls.Add(this.comboBox5);
+            this.groupBox1.Controls.Add(this.cmbUfProf);
             this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Controls.Add(this.comboBox9);
+            this.groupBox1.Controls.Add(this.cmbFormacao);
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.cmbGraduacao);
-            this.groupBox1.Controls.Add(this.textBox20);
-            this.groupBox1.Controls.Add(this.comboBox8);
+            this.groupBox1.Controls.Add(this.txtRf);
+            this.groupBox1.Controls.Add(this.cmbEscolaridade);
             this.groupBox1.Controls.Add(this.label32);
             this.groupBox1.Controls.Add(this.label34);
             this.groupBox1.Controls.Add(this.label29);
-            this.groupBox1.Controls.Add(this.comboBox7);
-            this.groupBox1.Controls.Add(this.textBox21);
+            this.groupBox1.Controls.Add(this.cmbEstadoCivil);
+            this.groupBox1.Controls.Add(this.txtQra);
             this.groupBox1.Controls.Add(this.label33);
             this.groupBox1.Controls.Add(this.label30);
             this.groupBox1.Controls.Add(this.label31);
-            this.groupBox1.Controls.Add(this.textBox19);
-            this.groupBox1.Controls.Add(this.dateTimePicker5);
+            this.groupBox1.Controls.Add(this.txtPasep);
+            this.groupBox1.Controls.Add(this.dtpDataAdmissao);
             this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Controls.Add(this.textBox17);
+            this.groupBox1.Controls.Add(this.txtNomeMae);
             this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.textBox18);
+            this.groupBox1.Controls.Add(this.txtNomePai);
             this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.dateTimePicker4);
+            this.groupBox1.Controls.Add(this.dtpNascimento);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.textBox16);
+            this.groupBox1.Controls.Add(this.txtNaturalidade);
             this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.textBox15);
+            this.groupBox1.Controls.Add(this.txtCidadeTitulo);
             this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.dateTimePicker3);
+            this.groupBox1.Controls.Add(this.dtpEmissaoTitulo);
             this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.textBox14);
+            this.groupBox1.Controls.Add(this.txtSessao);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.textBox13);
+            this.groupBox1.Controls.Add(this.txtZona);
             this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.txtTitEleitor);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.dtpValidadeCnh);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.comboBox4);
+            this.groupBox1.Controls.Add(this.cmbCategoria);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.txtRegCnh);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.txtNumCnh);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtpRgExpedido);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.cmbOeUF);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.cmbUf);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbOrgEmissor);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtNumero);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtBairro);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtRg);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtCelular);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtTelefone);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtEndereco);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -243,30 +304,80 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informações Pessoais";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.dgvEquipamentos);
             this.groupBox2.Controls.Add(this.toolStrip2);
-            this.groupBox2.Location = new System.Drawing.Point(958, 239);
+            this.groupBox2.Location = new System.Drawing.Point(958, 228);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(382, 170);
+            this.groupBox2.Size = new System.Drawing.Size(382, 181);
             this.groupBox2.TabIndex = 88;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Equipamentos";
             // 
-            // dataGridView1
+            // dgvEquipamentos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 67);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(376, 100);
-            this.dataGridView1.TabIndex = 89;
+            this.dgvEquipamentos.AllowUserToAddRows = false;
+            this.dgvEquipamentos.AllowUserToDeleteRows = false;
+            this.dgvEquipamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEquipamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.a_nome,
+            this.a_id,
+            this.a_qra,
+            this.a_validade,
+            this.c_validade,
+            this.a_modelo});
+            this.dgvEquipamentos.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvEquipamentos.Location = new System.Drawing.Point(3, 61);
+            this.dgvEquipamentos.Name = "dgvEquipamentos";
+            this.dgvEquipamentos.ReadOnly = true;
+            this.dgvEquipamentos.Size = new System.Drawing.Size(376, 117);
+            this.dgvEquipamentos.TabIndex = 89;
+            // 
+            // a_nome
+            // 
+            this.a_nome.DataPropertyName = "Nome";
+            this.a_nome.HeaderText = "Nome";
+            this.a_nome.Name = "a_nome";
+            this.a_nome.ReadOnly = true;
+            this.a_nome.Visible = false;
+            // 
+            // a_id
+            // 
+            this.a_id.DataPropertyName = "Id";
+            this.a_id.HeaderText = "ID";
+            this.a_id.Name = "a_id";
+            this.a_id.ReadOnly = true;
+            this.a_id.Visible = false;
+            // 
+            // a_qra
+            // 
+            this.a_qra.DataPropertyName = "QRA";
+            this.a_qra.HeaderText = "QRA";
+            this.a_qra.Name = "a_qra";
+            this.a_qra.ReadOnly = true;
+            // 
+            // a_validade
+            // 
+            this.a_validade.DataPropertyName = "Col. Fabr.";
+            this.a_validade.HeaderText = "Col. Fabr.";
+            this.a_validade.Name = "a_validade";
+            this.a_validade.ReadOnly = true;
+            // 
+            // c_validade
+            // 
+            this.c_validade.DataPropertyName = "Reg. Emissão";
+            this.c_validade.HeaderText = "Reg. Emissão";
+            this.c_validade.Name = "c_validade";
+            this.c_validade.ReadOnly = true;
+            // 
+            // a_modelo
+            // 
+            this.a_modelo.DataPropertyName = "Modelo";
+            this.a_modelo.HeaderText = "Modelo";
+            this.a_modelo.Name = "a_modelo";
+            this.a_modelo.ReadOnly = true;
             // 
             // toolStrip2
             // 
@@ -283,6 +394,7 @@
             // btnColete
             // 
             this.btnColete.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnColete.Enabled = false;
             this.btnColete.Image = ((System.Drawing.Image)(resources.GetObject("btnColete.Image")));
             this.btnColete.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnColete.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -290,6 +402,7 @@
             this.btnColete.Size = new System.Drawing.Size(45, 35);
             this.btnColete.Text = "Colete";
             this.btnColete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnColete.ToolTipText = "Cadastrar colete";
             this.btnColete.Click += new System.EventHandler(this.btnColete_Click);
             // 
             // toolStripSeparator5
@@ -301,6 +414,7 @@
             // btnArma
             // 
             this.btnArma.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnArma.Enabled = false;
             this.btnArma.Image = ((System.Drawing.Image)(resources.GetObject("btnArma.Image")));
             this.btnArma.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnArma.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -308,7 +422,7 @@
             this.btnArma.Size = new System.Drawing.Size(40, 35);
             this.btnArma.Text = "Arma";
             this.btnArma.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnArma.ToolTipText = "Informar apreensões";
+            this.btnArma.ToolTipText = "Cadastrar armamento";
             this.btnArma.Click += new System.EventHandler(this.btnArma_Click_1);
             // 
             // toolStrip1
@@ -319,9 +433,13 @@
             this.toolStripSeparator1,
             this.toolStripButton4,
             this.toolStripSeparator3,
-            this.btnInformarApreensao,
+            this.btnLimpar,
             this.toolStripSeparator2,
-            this.btnAcidentes});
+            this.btnAlterar,
+            this.toolStripSeparator4,
+            this.toolStripButton1,
+            this.toolStripSeparator6,
+            this.btnCadastrarGraduacao});
             this.toolStrip1.Location = new System.Drawing.Point(3, 443);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1340, 38);
@@ -337,6 +455,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(41, 35);
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnVoltar.ToolTipText = "Voltar ao menu";
             // 
             // toolStripSeparator1
             // 
@@ -353,6 +472,7 @@
             this.toolStripButton4.Size = new System.Drawing.Size(61, 35);
             this.toolStripButton4.Text = "Cadastrar";
             this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // toolStripSeparator3
             // 
@@ -360,17 +480,18 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 38);
             // 
-            // btnInformarApreensao
+            // btnLimpar
             // 
-            this.btnInformarApreensao.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnInformarApreensao.Image = ((System.Drawing.Image)(resources.GetObject("btnInformarApreensao.Image")));
-            this.btnInformarApreensao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnInformarApreensao.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnInformarApreensao.Name = "btnInformarApreensao";
-            this.btnInformarApreensao.Size = new System.Drawing.Size(48, 35);
-            this.btnInformarApreensao.Text = "Limpar";
-            this.btnInformarApreensao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnInformarApreensao.ToolTipText = "Informar apreensões";
+            this.btnLimpar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
+            this.btnLimpar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnLimpar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(48, 35);
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnLimpar.ToolTipText = "Limpar formulário";
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // toolStripSeparator2
             // 
@@ -378,26 +499,51 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 38);
             // 
-            // btnAcidentes
+            // btnAlterar
             // 
-            this.btnAcidentes.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnAcidentes.Image = ((System.Drawing.Image)(resources.GetObject("btnAcidentes.Image")));
-            this.btnAcidentes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnAcidentes.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAcidentes.Name = "btnAcidentes";
-            this.btnAcidentes.Size = new System.Drawing.Size(46, 35);
-            this.btnAcidentes.Text = "Alterar";
-            this.btnAcidentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnAcidentes.ToolTipText = "Informar acidentes";
+            this.btnAlterar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnAlterar.Enabled = false;
+            this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
+            this.btnAlterar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnAlterar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(46, 35);
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAlterar.ToolTipText = "Alterar informações";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // comboBox13
+            // toolStripSeparator4
             // 
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(857, 294);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(65, 26);
-            this.comboBox13.TabIndex = 86;
+            this.toolStripSeparator4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 38);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.Enabled = false;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(51, 35);
+            this.toolStripButton1.Text = "Plantão";
+            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.ToolTipText = "Inserir agente em um plantão";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // cmbRestricao
+            // 
+            this.cmbRestricao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRestricao.FormattingEnabled = true;
+            this.cmbRestricao.Items.AddRange(new object[] {
+            "Não",
+            "Sim"});
+            this.cmbRestricao.Location = new System.Drawing.Point(857, 294);
+            this.cmbRestricao.Name = "cmbRestricao";
+            this.cmbRestricao.Size = new System.Drawing.Size(65, 26);
+            this.cmbRestricao.TabIndex = 35;
             // 
             // label45
             // 
@@ -417,22 +563,31 @@
             this.label44.TabIndex = 84;
             this.label44.Text = "T/S:";
             // 
-            // comboBox12
+            // cmbTipoSanguineo
             // 
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(576, 292);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(95, 26);
-            this.comboBox12.TabIndex = 83;
+            this.cmbTipoSanguineo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoSanguineo.FormattingEnabled = true;
+            this.cmbTipoSanguineo.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-",
+            "O+",
+            "O-"});
+            this.cmbTipoSanguineo.Location = new System.Drawing.Point(576, 292);
+            this.cmbTipoSanguineo.Name = "cmbTipoSanguineo";
+            this.cmbTipoSanguineo.Size = new System.Drawing.Size(95, 26);
+            this.cmbTipoSanguineo.TabIndex = 34;
             // 
-            // textBox27
+            // txtObservacao
             // 
-            this.textBox27.Location = new System.Drawing.Point(576, 335);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(346, 74);
-            this.textBox27.TabIndex = 82;
+            this.txtObservacao.Location = new System.Drawing.Point(576, 335);
+            this.txtObservacao.Multiline = true;
+            this.txtObservacao.Name = "txtObservacao";
+            this.txtObservacao.Size = new System.Drawing.Size(346, 74);
+            this.txtObservacao.TabIndex = 36;
             // 
             // label43
             // 
@@ -443,12 +598,12 @@
             this.label43.TabIndex = 81;
             this.label43.Text = "Obs:";
             // 
-            // textBox26
+            // txtConclusaoSuperior
             // 
-            this.textBox26.Location = new System.Drawing.Point(857, 239);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(65, 24);
-            this.textBox26.TabIndex = 80;
+            this.txtConclusaoSuperior.Location = new System.Drawing.Point(857, 239);
+            this.txtConclusaoSuperior.Name = "txtConclusaoSuperior";
+            this.txtConclusaoSuperior.Size = new System.Drawing.Size(65, 24);
+            this.txtConclusaoSuperior.TabIndex = 33;
             // 
             // label42
             // 
@@ -459,12 +614,12 @@
             this.label42.TabIndex = 79;
             this.label42.Text = "Conclusão:";
             // 
-            // textBox25
+            // txtFormacaoMedio
             // 
-            this.textBox25.Location = new System.Drawing.Point(857, 177);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(65, 24);
-            this.textBox25.TabIndex = 78;
+            this.txtFormacaoMedio.Location = new System.Drawing.Point(857, 177);
+            this.txtFormacaoMedio.Name = "txtFormacaoMedio";
+            this.txtFormacaoMedio.Size = new System.Drawing.Size(65, 24);
+            this.txtFormacaoMedio.TabIndex = 30;
             // 
             // label41
             // 
@@ -475,12 +630,12 @@
             this.label41.TabIndex = 77;
             this.label41.Text = "Conclusão:";
             // 
-            // textBox24
+            // txtInstituicao
             // 
-            this.textBox24.Location = new System.Drawing.Point(576, 209);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(185, 24);
-            this.textBox24.TabIndex = 76;
+            this.txtInstituicao.Location = new System.Drawing.Point(576, 209);
+            this.txtInstituicao.Name = "txtInstituicao";
+            this.txtInstituicao.Size = new System.Drawing.Size(185, 24);
+            this.txtInstituicao.TabIndex = 31;
             // 
             // label40
             // 
@@ -500,23 +655,26 @@
             this.label39.TabIndex = 74;
             this.label39.Text = "Filhos:";
             // 
-            // comboBox11
+            // cmbFilhos
             // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(827, 130);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(95, 26);
-            this.comboBox11.TabIndex = 73;
+            this.cmbFilhos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFilhos.FormattingEnabled = true;
+            this.cmbFilhos.Items.AddRange(new object[] {
+            "Não",
+            "Sim"});
+            this.cmbFilhos.Location = new System.Drawing.Point(827, 130);
+            this.cmbFilhos.Name = "cmbFilhos";
+            this.cmbFilhos.Size = new System.Drawing.Size(95, 26);
+            this.cmbFilhos.TabIndex = 28;
             // 
-            // comboBox10
+            // cmbUfNaturalidade
             // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(1265, 88);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(75, 26);
-            this.comboBox10.TabIndex = 72;
+            this.cmbUfNaturalidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUfNaturalidade.FormattingEnabled = true;
+            this.cmbUfNaturalidade.Location = new System.Drawing.Point(1265, 88);
+            this.cmbUfNaturalidade.Name = "cmbUfNaturalidade";
+            this.cmbUfNaturalidade.Size = new System.Drawing.Size(75, 26);
+            this.cmbUfNaturalidade.TabIndex = 40;
             // 
             // label38
             // 
@@ -527,12 +685,12 @@
             this.label38.TabIndex = 71;
             this.label38.Text = "UF:";
             // 
-            // textBox22
+            // txtComplemento
             // 
-            this.textBox22.Location = new System.Drawing.Point(339, 153);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(126, 24);
-            this.textBox22.TabIndex = 70;
+            this.txtComplemento.Location = new System.Drawing.Point(339, 153);
+            this.txtComplemento.Name = "txtComplemento";
+            this.txtComplemento.Size = new System.Drawing.Size(126, 24);
+            this.txtComplemento.TabIndex = 7;
             // 
             // label28
             // 
@@ -543,12 +701,12 @@
             this.label28.TabIndex = 69;
             this.label28.Text = "Complemento:";
             // 
-            // textBox23
+            // txtCep
             // 
-            this.textBox23.Location = new System.Drawing.Point(95, 153);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(126, 24);
-            this.textBox23.TabIndex = 68;
+            this.txtCep.Location = new System.Drawing.Point(95, 153);
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(126, 24);
+            this.txtCep.TabIndex = 6;
             // 
             // label37
             // 
@@ -559,14 +717,14 @@
             this.label37.TabIndex = 67;
             this.label37.Text = "CEP:";
             // 
-            // comboBox5
+            // cmbUfProf
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(398, 328);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(67, 26);
-            this.comboBox5.TabIndex = 66;
+            this.cmbUfProf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUfProf.FormattingEnabled = true;
+            this.cmbUfProf.Location = new System.Drawing.Point(398, 328);
+            this.cmbUfProf.Name = "cmbUfProf";
+            this.cmbUfProf.Size = new System.Drawing.Size(67, 26);
+            this.cmbUfProf.TabIndex = 17;
             // 
             // label36
             // 
@@ -577,14 +735,20 @@
             this.label36.TabIndex = 65;
             this.label36.Text = "UF:";
             // 
-            // comboBox9
+            // cmbFormacao
             // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(576, 239);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(185, 26);
-            this.comboBox9.TabIndex = 64;
+            this.cmbFormacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFormacao.FormattingEnabled = true;
+            this.cmbFormacao.Items.AddRange(new object[] {
+            "Bacharel",
+            "Doutorado",
+            "Licenciatura",
+            "Mestrado",
+            "Tecnólogo"});
+            this.cmbFormacao.Location = new System.Drawing.Point(576, 239);
+            this.cmbFormacao.Name = "cmbFormacao";
+            this.cmbFormacao.Size = new System.Drawing.Size(185, 26);
+            this.cmbFormacao.TabIndex = 32;
             // 
             // label35
             // 
@@ -599,29 +763,30 @@
             // 
             this.cmbGraduacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGraduacao.FormattingEnabled = true;
-            this.cmbGraduacao.Items.AddRange(new object[] {
-            "cadastrar"});
             this.cmbGraduacao.Location = new System.Drawing.Point(1207, 196);
             this.cmbGraduacao.Name = "cmbGraduacao";
             this.cmbGraduacao.Size = new System.Drawing.Size(133, 26);
-            this.cmbGraduacao.TabIndex = 62;
-            this.cmbGraduacao.SelectedIndexChanged += new System.EventHandler(this.cmbGraduacao_SelectedIndexChanged);
+            this.cmbGraduacao.TabIndex = 44;
             // 
-            // textBox20
+            // txtRf
             // 
-            this.textBox20.Location = new System.Drawing.Point(1080, 138);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(75, 24);
-            this.textBox20.TabIndex = 56;
+            this.txtRf.Location = new System.Drawing.Point(1080, 138);
+            this.txtRf.Name = "txtRf";
+            this.txtRf.Size = new System.Drawing.Size(75, 24);
+            this.txtRf.TabIndex = 41;
             // 
-            // comboBox8
+            // cmbEscolaridade
             // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(576, 177);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(185, 26);
-            this.comboBox8.TabIndex = 58;
+            this.cmbEscolaridade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEscolaridade.FormattingEnabled = true;
+            this.cmbEscolaridade.Items.AddRange(new object[] {
+            "Ensino Fundamental",
+            "Ensino Médio",
+            "Ensino Superior"});
+            this.cmbEscolaridade.Location = new System.Drawing.Point(576, 177);
+            this.cmbEscolaridade.Name = "cmbEscolaridade";
+            this.cmbEscolaridade.Size = new System.Drawing.Size(185, 26);
+            this.cmbEscolaridade.TabIndex = 29;
             // 
             // label32
             // 
@@ -650,21 +815,26 @@
             this.label29.TabIndex = 55;
             this.label29.Text = "RF:";
             // 
-            // comboBox7
+            // cmbEstadoCivil
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(576, 133);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(126, 26);
-            this.comboBox7.TabIndex = 56;
+            this.cmbEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstadoCivil.FormattingEnabled = true;
+            this.cmbEstadoCivil.Items.AddRange(new object[] {
+            "Casado",
+            "Divorciado",
+            "Solteiro",
+            "Viúvo"});
+            this.cmbEstadoCivil.Location = new System.Drawing.Point(576, 133);
+            this.cmbEstadoCivil.Name = "cmbEstadoCivil";
+            this.cmbEstadoCivil.Size = new System.Drawing.Size(126, 26);
+            this.cmbEstadoCivil.TabIndex = 27;
             // 
-            // textBox21
+            // txtQra
             // 
-            this.textBox21.Location = new System.Drawing.Point(1236, 166);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(104, 24);
-            this.textBox21.TabIndex = 60;
+            this.txtQra.Location = new System.Drawing.Point(1236, 166);
+            this.txtQra.Name = "txtQra";
+            this.txtQra.Size = new System.Drawing.Size(104, 24);
+            this.txtQra.TabIndex = 43;
             // 
             // label33
             // 
@@ -693,21 +863,22 @@
             this.label31.TabIndex = 59;
             this.label31.Text = "QRA:";
             // 
-            // textBox19
+            // txtPasep
             // 
-            this.textBox19.Location = new System.Drawing.Point(95, 390);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(168, 24);
-            this.textBox19.TabIndex = 53;
+            this.txtPasep.Location = new System.Drawing.Point(95, 390);
+            this.txtPasep.Name = "txtPasep";
+            this.txtPasep.Size = new System.Drawing.Size(168, 24);
+            this.txtPasep.TabIndex = 20;
             // 
-            // dateTimePicker5
+            // dtpDataAdmissao
             // 
-            this.dateTimePicker5.CustomFormat = "";
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(1245, 136);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(95, 24);
-            this.dateTimePicker5.TabIndex = 58;
+            this.dtpDataAdmissao.CustomFormat = "yyyy-MM-dd";
+            this.dtpDataAdmissao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDataAdmissao.Location = new System.Drawing.Point(1245, 136);
+            this.dtpDataAdmissao.Name = "dtpDataAdmissao";
+            this.dtpDataAdmissao.Size = new System.Drawing.Size(95, 24);
+            this.dtpDataAdmissao.TabIndex = 42;
+            this.dtpDataAdmissao.Value = new System.DateTime(2018, 1, 31, 0, 0, 0, 0);
             // 
             // label27
             // 
@@ -718,12 +889,12 @@
             this.label27.TabIndex = 52;
             this.label27.Text = "PIS/PASEP:";
             // 
-            // textBox17
+            // txtNomeMae
             // 
-            this.textBox17.Location = new System.Drawing.Point(1055, 58);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(285, 24);
-            this.textBox17.TabIndex = 51;
+            this.txtNomeMae.Location = new System.Drawing.Point(1055, 58);
+            this.txtNomeMae.Name = "txtNomeMae";
+            this.txtNomeMae.Size = new System.Drawing.Size(285, 24);
+            this.txtNomeMae.TabIndex = 38;
             // 
             // label25
             // 
@@ -734,12 +905,12 @@
             this.label25.TabIndex = 50;
             this.label25.Text = "Mãe:";
             // 
-            // textBox18
+            // txtNomePai
             // 
-            this.textBox18.Location = new System.Drawing.Point(1055, 28);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(285, 24);
-            this.textBox18.TabIndex = 49;
+            this.txtNomePai.Location = new System.Drawing.Point(1055, 28);
+            this.txtNomePai.Name = "txtNomePai";
+            this.txtNomePai.Size = new System.Drawing.Size(285, 24);
+            this.txtNomePai.TabIndex = 37;
             // 
             // label26
             // 
@@ -750,14 +921,15 @@
             this.label26.TabIndex = 48;
             this.label26.Text = "Pai:";
             // 
-            // dateTimePicker4
+            // dtpNascimento
             // 
-            this.dateTimePicker4.CustomFormat = "";
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(827, 90);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(95, 24);
-            this.dateTimePicker4.TabIndex = 47;
+            this.dtpNascimento.CustomFormat = "yyyy-MM-dd";
+            this.dtpNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNascimento.Location = new System.Drawing.Point(827, 90);
+            this.dtpNascimento.Name = "dtpNascimento";
+            this.dtpNascimento.Size = new System.Drawing.Size(95, 24);
+            this.dtpNascimento.TabIndex = 26;
+            this.dtpNascimento.Value = new System.DateTime(2018, 1, 31, 0, 0, 0, 0);
             // 
             // label24
             // 
@@ -768,12 +940,12 @@
             this.label24.TabIndex = 46;
             this.label24.Text = "Nascimento:";
             // 
-            // textBox16
+            // txtNaturalidade
             // 
-            this.textBox16.Location = new System.Drawing.Point(1055, 88);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(169, 24);
-            this.textBox16.TabIndex = 45;
+            this.txtNaturalidade.Location = new System.Drawing.Point(1055, 88);
+            this.txtNaturalidade.Name = "txtNaturalidade";
+            this.txtNaturalidade.Size = new System.Drawing.Size(169, 24);
+            this.txtNaturalidade.TabIndex = 39;
             // 
             // label23
             // 
@@ -784,12 +956,12 @@
             this.label23.TabIndex = 44;
             this.label23.Text = "Naturalidade:";
             // 
-            // textBox15
+            // txtCidadeTitulo
             // 
-            this.textBox15.Location = new System.Drawing.Point(95, 330);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(168, 24);
-            this.textBox15.TabIndex = 43;
+            this.txtCidadeTitulo.Location = new System.Drawing.Point(95, 330);
+            this.txtCidadeTitulo.Name = "txtCidadeTitulo";
+            this.txtCidadeTitulo.Size = new System.Drawing.Size(168, 24);
+            this.txtCidadeTitulo.TabIndex = 16;
             // 
             // label22
             // 
@@ -800,14 +972,15 @@
             this.label22.TabIndex = 42;
             this.label22.Text = "Cidade:";
             // 
-            // dateTimePicker3
+            // dtpEmissaoTitulo
             // 
-            this.dateTimePicker3.CustomFormat = "";
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(370, 358);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(95, 24);
-            this.dateTimePicker3.TabIndex = 41;
+            this.dtpEmissaoTitulo.CustomFormat = "yyyy-MM-dd";
+            this.dtpEmissaoTitulo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpEmissaoTitulo.Location = new System.Drawing.Point(370, 358);
+            this.dtpEmissaoTitulo.Name = "dtpEmissaoTitulo";
+            this.dtpEmissaoTitulo.Size = new System.Drawing.Size(95, 24);
+            this.dtpEmissaoTitulo.TabIndex = 19;
+            this.dtpEmissaoTitulo.Value = new System.DateTime(2018, 1, 31, 0, 0, 0, 0);
             // 
             // label21
             // 
@@ -818,12 +991,12 @@
             this.label21.TabIndex = 40;
             this.label21.Text = "Emissão:";
             // 
-            // textBox14
+            // txtSessao
             // 
-            this.textBox14.Location = new System.Drawing.Point(95, 360);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(126, 24);
-            this.textBox14.TabIndex = 39;
+            this.txtSessao.Location = new System.Drawing.Point(95, 360);
+            this.txtSessao.Name = "txtSessao";
+            this.txtSessao.Size = new System.Drawing.Size(126, 24);
+            this.txtSessao.TabIndex = 18;
             // 
             // label20
             // 
@@ -834,12 +1007,12 @@
             this.label20.TabIndex = 38;
             this.label20.Text = "Zona:";
             // 
-            // textBox13
+            // txtZona
             // 
-            this.textBox13.Location = new System.Drawing.Point(95, 300);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(126, 24);
-            this.textBox13.TabIndex = 37;
+            this.txtZona.Location = new System.Drawing.Point(95, 300);
+            this.txtZona.Name = "txtZona";
+            this.txtZona.Size = new System.Drawing.Size(126, 24);
+            this.txtZona.TabIndex = 14;
             // 
             // label19
             // 
@@ -850,12 +1023,12 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "Sessão:";
             // 
-            // textBox12
+            // txtTitEleitor
             // 
-            this.textBox12.Location = new System.Drawing.Point(339, 298);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(126, 24);
-            this.textBox12.TabIndex = 35;
+            this.txtTitEleitor.Location = new System.Drawing.Point(339, 298);
+            this.txtTitEleitor.Name = "txtTitEleitor";
+            this.txtTitEleitor.Size = new System.Drawing.Size(126, 24);
+            this.txtTitEleitor.TabIndex = 15;
             // 
             // label18
             // 
@@ -866,12 +1039,13 @@
             this.label18.TabIndex = 34;
             this.label18.Text = "Tit. Eleitor:";
             // 
-            // textBox11
+            // txtCpf
             // 
-            this.textBox11.Location = new System.Drawing.Point(576, 93);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(126, 24);
-            this.textBox11.TabIndex = 33;
+            this.txtCpf.Location = new System.Drawing.Point(576, 93);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(126, 24);
+            this.txtCpf.TabIndex = 25;
+            this.txtCpf.Leave += new System.EventHandler(this.txtCpf_Leave);
             // 
             // label17
             // 
@@ -882,14 +1056,15 @@
             this.label17.TabIndex = 32;
             this.label17.Text = "CPF:";
             // 
-            // dateTimePicker2
+            // dtpValidadeCnh
             // 
-            this.dateTimePicker2.CustomFormat = "";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(370, 258);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(95, 24);
-            this.dateTimePicker2.TabIndex = 31;
+            this.dtpValidadeCnh.CustomFormat = "yyyy-MM-dd";
+            this.dtpValidadeCnh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpValidadeCnh.Location = new System.Drawing.Point(370, 258);
+            this.dtpValidadeCnh.Name = "dtpValidadeCnh";
+            this.dtpValidadeCnh.Size = new System.Drawing.Size(95, 24);
+            this.dtpValidadeCnh.TabIndex = 13;
+            this.dtpValidadeCnh.Value = new System.DateTime(2018, 1, 31, 0, 0, 0, 0);
             // 
             // label16
             // 
@@ -900,14 +1075,14 @@
             this.label16.TabIndex = 30;
             this.label16.Text = "Validade:";
             // 
-            // comboBox4
+            // cmbCategoria
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(95, 255);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(75, 26);
-            this.comboBox4.TabIndex = 29;
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(95, 255);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(75, 26);
+            this.cmbCategoria.TabIndex = 12;
             // 
             // label15
             // 
@@ -918,12 +1093,12 @@
             this.label15.TabIndex = 28;
             this.label15.Text = "Categoria:";
             // 
-            // textBox10
+            // txtRegCnh
             // 
-            this.textBox10.Location = new System.Drawing.Point(339, 225);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(126, 24);
-            this.textBox10.TabIndex = 27;
+            this.txtRegCnh.Location = new System.Drawing.Point(339, 225);
+            this.txtRegCnh.Name = "txtRegCnh";
+            this.txtRegCnh.Size = new System.Drawing.Size(126, 24);
+            this.txtRegCnh.TabIndex = 11;
             // 
             // label14
             // 
@@ -934,12 +1109,12 @@
             this.label14.TabIndex = 26;
             this.label14.Text = "Reg. CNH:";
             // 
-            // textBox9
+            // txtNumCnh
             // 
-            this.textBox9.Location = new System.Drawing.Point(95, 225);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(126, 24);
-            this.textBox9.TabIndex = 25;
+            this.txtNumCnh.Location = new System.Drawing.Point(95, 225);
+            this.txtNumCnh.Name = "txtNumCnh";
+            this.txtNumCnh.Size = new System.Drawing.Size(126, 24);
+            this.txtNumCnh.TabIndex = 10;
             // 
             // label13
             // 
@@ -950,50 +1125,51 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "Nº CNH:";
             // 
-            // dateTimePicker1
+            // dtpRgExpedido
             // 
-            this.dateTimePicker1.CustomFormat = "";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(827, 60);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(95, 24);
-            this.dateTimePicker1.TabIndex = 23;
+            this.dtpRgExpedido.CustomFormat = "yyyy-MM-dd";
+            this.dtpRgExpedido.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpRgExpedido.Location = new System.Drawing.Point(827, 33);
+            this.dtpRgExpedido.Name = "dtpRgExpedido";
+            this.dtpRgExpedido.Size = new System.Drawing.Size(95, 24);
+            this.dtpRgExpedido.TabIndex = 24;
+            this.dtpRgExpedido.Value = new System.DateTime(2018, 1, 31, 0, 0, 0, 0);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(723, 61);
+            this.label12.Location = new System.Drawing.Point(723, 36);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(98, 18);
             this.label12.TabIndex = 22;
             this.label12.Text = "Expedido em:";
             // 
-            // comboBox3
+            // cmbOeUF
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(576, 63);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(75, 26);
-            this.comboBox3.TabIndex = 21;
+            this.cmbOeUF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOeUF.FormattingEnabled = true;
+            this.cmbOeUF.Location = new System.Drawing.Point(847, 61);
+            this.cmbOeUF.Name = "cmbOeUF";
+            this.cmbOeUF.Size = new System.Drawing.Size(75, 26);
+            this.cmbOeUF.TabIndex = 23;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(538, 66);
+            this.label11.Location = new System.Drawing.Point(809, 67);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(32, 18);
             this.label11.TabIndex = 20;
             this.label11.Text = "UF:";
             // 
-            // comboBox2
+            // cmbUf
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(398, 123);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(67, 26);
-            this.comboBox2.TabIndex = 19;
+            this.cmbUf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUf.FormattingEnabled = true;
+            this.cmbUf.Location = new System.Drawing.Point(398, 123);
+            this.cmbUf.Name = "cmbUf";
+            this.cmbUf.Size = new System.Drawing.Size(67, 26);
+            this.cmbUf.TabIndex = 5;
             // 
             // label10
             // 
@@ -1004,30 +1180,30 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "UF:";
             // 
-            // comboBox1
+            // cmbOrgEmissor
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(810, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(112, 26);
-            this.comboBox1.TabIndex = 17;
+            this.cmbOrgEmissor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOrgEmissor.FormattingEnabled = true;
+            this.cmbOrgEmissor.Location = new System.Drawing.Point(576, 61);
+            this.cmbOrgEmissor.Name = "cmbOrgEmissor";
+            this.cmbOrgEmissor.Size = new System.Drawing.Size(112, 26);
+            this.cmbOrgEmissor.TabIndex = 22;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(732, 34);
+            this.label9.Location = new System.Drawing.Point(498, 67);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(72, 18);
             this.label9.TabIndex = 16;
             this.label9.Text = "Org. Em.:";
             // 
-            // textBox8
+            // txtCidade
             // 
-            this.textBox8.Location = new System.Drawing.Point(95, 123);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(199, 24);
-            this.textBox8.TabIndex = 15;
+            this.txtCidade.Location = new System.Drawing.Point(95, 123);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(199, 24);
+            this.txtCidade.TabIndex = 4;
             // 
             // label8
             // 
@@ -1038,12 +1214,12 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Cidade:";
             // 
-            // textBox7
+            // txtNumero
             // 
-            this.textBox7.Location = new System.Drawing.Point(398, 93);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(67, 24);
-            this.textBox7.TabIndex = 13;
+            this.txtNumero.Location = new System.Drawing.Point(398, 93);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(67, 24);
+            this.txtNumero.TabIndex = 3;
             // 
             // label7
             // 
@@ -1054,12 +1230,12 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Nº:";
             // 
-            // textBox6
+            // txtBairro
             // 
-            this.textBox6.Location = new System.Drawing.Point(95, 93);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(199, 24);
-            this.textBox6.TabIndex = 11;
+            this.txtBairro.Location = new System.Drawing.Point(95, 93);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(199, 24);
+            this.txtBairro.TabIndex = 2;
             // 
             // label6
             // 
@@ -1070,12 +1246,12 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Bairro:";
             // 
-            // textBox5
+            // txtRg
             // 
-            this.textBox5.Location = new System.Drawing.Point(576, 33);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(126, 24);
-            this.textBox5.TabIndex = 9;
+            this.txtRg.Location = new System.Drawing.Point(576, 33);
+            this.txtRg.Name = "txtRg";
+            this.txtRg.Size = new System.Drawing.Size(126, 24);
+            this.txtRg.TabIndex = 21;
             // 
             // label5
             // 
@@ -1086,12 +1262,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "RG:";
             // 
-            // textBox4
+            // txtCelular
             // 
-            this.textBox4.Location = new System.Drawing.Point(339, 183);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(126, 24);
-            this.textBox4.TabIndex = 7;
+            this.txtCelular.Location = new System.Drawing.Point(339, 183);
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.Size = new System.Drawing.Size(126, 24);
+            this.txtCelular.TabIndex = 9;
             // 
             // label4
             // 
@@ -1102,12 +1278,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Celular:";
             // 
-            // textBox3
+            // txtTelefone
             // 
-            this.textBox3.Location = new System.Drawing.Point(95, 183);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(126, 24);
-            this.textBox3.TabIndex = 5;
+            this.txtTelefone.Location = new System.Drawing.Point(95, 183);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(126, 24);
+            this.txtTelefone.TabIndex = 8;
             // 
             // label3
             // 
@@ -1118,12 +1294,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Telefone:";
             // 
-            // textBox2
+            // txtEndereco
             // 
-            this.textBox2.Location = new System.Drawing.Point(95, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(370, 24);
-            this.textBox2.TabIndex = 3;
+            this.txtEndereco.Location = new System.Drawing.Point(95, 63);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(370, 24);
+            this.txtEndereco.TabIndex = 1;
             // 
             // label2
             // 
@@ -1134,12 +1310,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Endereço:";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(370, 24);
-            this.textBox1.TabIndex = 1;
+            this.txtNome.Location = new System.Drawing.Point(95, 33);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(370, 24);
+            this.txtNome.TabIndex = 0;
             // 
             // label1
             // 
@@ -1155,12 +1331,497 @@
             this.dgvGuardas.AllowUserToAddRows = false;
             this.dgvGuardas.AllowUserToDeleteRows = false;
             this.dgvGuardas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGuardas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_agente,
+            this.qra,
+            this.nome,
+            this.endereco,
+            this.numero,
+            this.bairro,
+            this.cidade,
+            this.cep,
+            this.estado,
+            this.complemento,
+            this.telefone,
+            this.celular,
+            this.num_cnh,
+            this.reg_cnh,
+            this.categoria,
+            this.validade,
+            this.tit_eleitor,
+            this.cidade_tit,
+            this.zona,
+            this.estado_titulo,
+            this.sessao,
+            this.emissao_titulo,
+            this.pis,
+            this.rg,
+            this.emissao_rg,
+            this.estado_rg,
+            this.emissor,
+            this.cpf,
+            this.data_nascimento,
+            this.estado_civil,
+            this.filhos,
+            this.escolaridade,
+            this.ano_conclusao,
+            this.instituicao,
+            this.formacao,
+            this.tipo_sanguineo,
+            this.restricao,
+            this.obs_restricao,
+            this.pai,
+            this.mae,
+            this.naturalidade,
+            this.naturalidade_estado,
+            this.reg_funcional,
+            this.data_admissao,
+            this.graduacao,
+            this.plantao,
+            this.equipe,
+            this.posicao,
+            this.conclusao_formacao});
             this.dgvGuardas.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvGuardas.Location = new System.Drawing.Point(0, 515);
             this.dgvGuardas.Name = "dgvGuardas";
             this.dgvGuardas.ReadOnly = true;
             this.dgvGuardas.Size = new System.Drawing.Size(1370, 234);
             this.dgvGuardas.TabIndex = 0;
+            this.dgvGuardas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGuardas_CellContentClick);
+            // 
+            // id_agente
+            // 
+            this.id_agente.DataPropertyName = "id";
+            this.id_agente.HeaderText = "ID";
+            this.id_agente.Name = "id_agente";
+            this.id_agente.ReadOnly = true;
+            this.id_agente.Visible = false;
+            // 
+            // qra
+            // 
+            this.qra.DataPropertyName = "qra";
+            this.qra.HeaderText = "QRA";
+            this.qra.Name = "qra";
+            this.qra.ReadOnly = true;
+            this.qra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.qra.Width = 160;
+            // 
+            // nome
+            // 
+            this.nome.DataPropertyName = "nome";
+            this.nome.HeaderText = "Agente";
+            this.nome.Name = "nome";
+            this.nome.ReadOnly = true;
+            this.nome.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.nome.Visible = false;
+            // 
+            // endereco
+            // 
+            this.endereco.DataPropertyName = "endereco";
+            this.endereco.HeaderText = "Endereço";
+            this.endereco.Name = "endereco";
+            this.endereco.ReadOnly = true;
+            this.endereco.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.endereco.Width = 220;
+            // 
+            // numero
+            // 
+            this.numero.DataPropertyName = "numero";
+            this.numero.HeaderText = "Nº";
+            this.numero.Name = "numero";
+            this.numero.ReadOnly = true;
+            this.numero.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.numero.Width = 50;
+            // 
+            // bairro
+            // 
+            this.bairro.DataPropertyName = "bairro";
+            this.bairro.HeaderText = "Bairro";
+            this.bairro.Name = "bairro";
+            this.bairro.ReadOnly = true;
+            this.bairro.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.bairro.Width = 150;
+            // 
+            // cidade
+            // 
+            this.cidade.DataPropertyName = "cidade";
+            this.cidade.HeaderText = "Cidade";
+            this.cidade.Name = "cidade";
+            this.cidade.ReadOnly = true;
+            this.cidade.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.cidade.Width = 160;
+            // 
+            // cep
+            // 
+            this.cep.DataPropertyName = "cep";
+            this.cep.HeaderText = "Cep";
+            this.cep.Name = "cep";
+            this.cep.ReadOnly = true;
+            this.cep.Visible = false;
+            // 
+            // estado
+            // 
+            this.estado.DataPropertyName = "estado";
+            this.estado.HeaderText = "Estado";
+            this.estado.Name = "estado";
+            this.estado.ReadOnly = true;
+            this.estado.Visible = false;
+            // 
+            // complemento
+            // 
+            this.complemento.DataPropertyName = "complemento";
+            this.complemento.HeaderText = "Complemento";
+            this.complemento.Name = "complemento";
+            this.complemento.ReadOnly = true;
+            this.complemento.Visible = false;
+            // 
+            // telefone
+            // 
+            this.telefone.DataPropertyName = "telefone";
+            this.telefone.HeaderText = "Telefone";
+            this.telefone.Name = "telefone";
+            this.telefone.ReadOnly = true;
+            this.telefone.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.telefone.Width = 135;
+            // 
+            // celular
+            // 
+            this.celular.DataPropertyName = "celular";
+            this.celular.HeaderText = "Celular";
+            this.celular.Name = "celular";
+            this.celular.ReadOnly = true;
+            this.celular.Width = 135;
+            // 
+            // num_cnh
+            // 
+            this.num_cnh.DataPropertyName = "num_cnh";
+            this.num_cnh.HeaderText = "CNH";
+            this.num_cnh.Name = "num_cnh";
+            this.num_cnh.ReadOnly = true;
+            this.num_cnh.Visible = false;
+            // 
+            // reg_cnh
+            // 
+            this.reg_cnh.DataPropertyName = "reg_cnh";
+            this.reg_cnh.HeaderText = "Reg CNH";
+            this.reg_cnh.Name = "reg_cnh";
+            this.reg_cnh.ReadOnly = true;
+            this.reg_cnh.Visible = false;
+            // 
+            // categoria
+            // 
+            this.categoria.DataPropertyName = "categoria";
+            this.categoria.HeaderText = "Categoria";
+            this.categoria.Name = "categoria";
+            this.categoria.ReadOnly = true;
+            this.categoria.Visible = false;
+            // 
+            // validade
+            // 
+            this.validade.DataPropertyName = "validade";
+            this.validade.HeaderText = "Validade CNH";
+            this.validade.Name = "validade";
+            this.validade.ReadOnly = true;
+            this.validade.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.validade.Width = 125;
+            // 
+            // tit_eleitor
+            // 
+            this.tit_eleitor.DataPropertyName = "tit_eleitor";
+            this.tit_eleitor.HeaderText = "Titulo";
+            this.tit_eleitor.Name = "tit_eleitor";
+            this.tit_eleitor.ReadOnly = true;
+            this.tit_eleitor.Visible = false;
+            // 
+            // cidade_tit
+            // 
+            this.cidade_tit.DataPropertyName = "cidade_tit";
+            this.cidade_tit.HeaderText = "Cidade Tit";
+            this.cidade_tit.Name = "cidade_tit";
+            this.cidade_tit.ReadOnly = true;
+            this.cidade_tit.Visible = false;
+            // 
+            // zona
+            // 
+            this.zona.DataPropertyName = "zona";
+            this.zona.HeaderText = "Zona";
+            this.zona.Name = "zona";
+            this.zona.ReadOnly = true;
+            this.zona.Visible = false;
+            // 
+            // estado_titulo
+            // 
+            this.estado_titulo.DataPropertyName = "estado_titulo";
+            this.estado_titulo.HeaderText = "Estado Tit";
+            this.estado_titulo.Name = "estado_titulo";
+            this.estado_titulo.ReadOnly = true;
+            this.estado_titulo.Visible = false;
+            // 
+            // sessao
+            // 
+            this.sessao.DataPropertyName = "sessao";
+            this.sessao.HeaderText = "Sessão";
+            this.sessao.Name = "sessao";
+            this.sessao.ReadOnly = true;
+            this.sessao.Visible = false;
+            // 
+            // emissao_titulo
+            // 
+            this.emissao_titulo.DataPropertyName = "emissao_titulo";
+            this.emissao_titulo.HeaderText = "Emissao tit";
+            this.emissao_titulo.Name = "emissao_titulo";
+            this.emissao_titulo.ReadOnly = true;
+            this.emissao_titulo.Visible = false;
+            // 
+            // pis
+            // 
+            this.pis.DataPropertyName = "pis";
+            this.pis.HeaderText = "PIS";
+            this.pis.Name = "pis";
+            this.pis.ReadOnly = true;
+            this.pis.Visible = false;
+            // 
+            // rg
+            // 
+            this.rg.DataPropertyName = "rg";
+            this.rg.HeaderText = "RG";
+            this.rg.Name = "rg";
+            this.rg.ReadOnly = true;
+            this.rg.Width = 135;
+            // 
+            // emissao_rg
+            // 
+            this.emissao_rg.DataPropertyName = "emissao_rg";
+            this.emissao_rg.HeaderText = "Emissão Rg";
+            this.emissao_rg.Name = "emissao_rg";
+            this.emissao_rg.ReadOnly = true;
+            this.emissao_rg.Visible = false;
+            // 
+            // estado_rg
+            // 
+            this.estado_rg.DataPropertyName = "estado_rg";
+            this.estado_rg.HeaderText = "RG Estado";
+            this.estado_rg.Name = "estado_rg";
+            this.estado_rg.ReadOnly = true;
+            this.estado_rg.Visible = false;
+            // 
+            // emissor
+            // 
+            this.emissor.DataPropertyName = "emissor";
+            this.emissor.HeaderText = "emissor";
+            this.emissor.Name = "emissor";
+            this.emissor.ReadOnly = true;
+            this.emissor.Visible = false;
+            // 
+            // cpf
+            // 
+            this.cpf.DataPropertyName = "cpf";
+            this.cpf.HeaderText = "CPF";
+            this.cpf.Name = "cpf";
+            this.cpf.ReadOnly = true;
+            this.cpf.Visible = false;
+            // 
+            // data_nascimento
+            // 
+            this.data_nascimento.DataPropertyName = "data_nascimento";
+            this.data_nascimento.HeaderText = "Data Nascimento";
+            this.data_nascimento.Name = "data_nascimento";
+            this.data_nascimento.ReadOnly = true;
+            this.data_nascimento.Visible = false;
+            // 
+            // estado_civil
+            // 
+            this.estado_civil.DataPropertyName = "estado_civil";
+            this.estado_civil.HeaderText = "Estado Civil";
+            this.estado_civil.Name = "estado_civil";
+            this.estado_civil.ReadOnly = true;
+            this.estado_civil.Visible = false;
+            // 
+            // filhos
+            // 
+            this.filhos.DataPropertyName = "filhos";
+            this.filhos.HeaderText = "Filhos";
+            this.filhos.Name = "filhos";
+            this.filhos.ReadOnly = true;
+            this.filhos.Visible = false;
+            // 
+            // escolaridade
+            // 
+            this.escolaridade.DataPropertyName = "escolaridade";
+            this.escolaridade.HeaderText = "Escolaridade";
+            this.escolaridade.Name = "escolaridade";
+            this.escolaridade.ReadOnly = true;
+            this.escolaridade.Visible = false;
+            // 
+            // ano_conclusao
+            // 
+            this.ano_conclusao.DataPropertyName = "ano_conclusao";
+            this.ano_conclusao.HeaderText = "Conclusao E.Médio";
+            this.ano_conclusao.Name = "ano_conclusao";
+            this.ano_conclusao.ReadOnly = true;
+            this.ano_conclusao.Visible = false;
+            // 
+            // instituicao
+            // 
+            this.instituicao.DataPropertyName = "instituicao";
+            this.instituicao.HeaderText = "Instituição";
+            this.instituicao.Name = "instituicao";
+            this.instituicao.ReadOnly = true;
+            this.instituicao.Visible = false;
+            // 
+            // formacao
+            // 
+            this.formacao.DataPropertyName = "formacao";
+            this.formacao.HeaderText = "Formação";
+            this.formacao.Name = "formacao";
+            this.formacao.ReadOnly = true;
+            this.formacao.Visible = false;
+            // 
+            // tipo_sanguineo
+            // 
+            this.tipo_sanguineo.DataPropertyName = "tipo_sanguineo";
+            this.tipo_sanguineo.HeaderText = "T/S";
+            this.tipo_sanguineo.Name = "tipo_sanguineo";
+            this.tipo_sanguineo.ReadOnly = true;
+            this.tipo_sanguineo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.tipo_sanguineo.Width = 50;
+            // 
+            // restricao
+            // 
+            this.restricao.DataPropertyName = "restricao";
+            this.restricao.HeaderText = "Restrição";
+            this.restricao.Name = "restricao";
+            this.restricao.ReadOnly = true;
+            this.restricao.Visible = false;
+            // 
+            // obs_restricao
+            // 
+            this.obs_restricao.DataPropertyName = "obs_restricao";
+            this.obs_restricao.HeaderText = "Observação restrição";
+            this.obs_restricao.Name = "obs_restricao";
+            this.obs_restricao.ReadOnly = true;
+            this.obs_restricao.Visible = false;
+            // 
+            // pai
+            // 
+            this.pai.DataPropertyName = "pai";
+            this.pai.HeaderText = "Pai";
+            this.pai.Name = "pai";
+            this.pai.ReadOnly = true;
+            this.pai.Visible = false;
+            // 
+            // mae
+            // 
+            this.mae.DataPropertyName = "mae";
+            this.mae.HeaderText = "Mãe";
+            this.mae.Name = "mae";
+            this.mae.ReadOnly = true;
+            this.mae.Visible = false;
+            // 
+            // naturalidade
+            // 
+            this.naturalidade.DataPropertyName = "naturalidade";
+            this.naturalidade.HeaderText = "Naturalidade";
+            this.naturalidade.Name = "naturalidade";
+            this.naturalidade.ReadOnly = true;
+            this.naturalidade.Visible = false;
+            // 
+            // naturalidade_estado
+            // 
+            this.naturalidade_estado.DataPropertyName = "naturalidade_estado";
+            this.naturalidade_estado.HeaderText = "Nat. Estado";
+            this.naturalidade_estado.Name = "naturalidade_estado";
+            this.naturalidade_estado.ReadOnly = true;
+            this.naturalidade_estado.Visible = false;
+            // 
+            // reg_funcional
+            // 
+            this.reg_funcional.DataPropertyName = "reg_funcional";
+            this.reg_funcional.HeaderText = "Reg. Funcional";
+            this.reg_funcional.Name = "reg_funcional";
+            this.reg_funcional.ReadOnly = true;
+            this.reg_funcional.Visible = false;
+            // 
+            // data_admissao
+            // 
+            this.data_admissao.DataPropertyName = "data_admissao";
+            this.data_admissao.HeaderText = "Admissão";
+            this.data_admissao.Name = "data_admissao";
+            this.data_admissao.ReadOnly = true;
+            this.data_admissao.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_admissao.Visible = false;
+            // 
+            // graduacao
+            // 
+            this.graduacao.DataPropertyName = "graduacao";
+            this.graduacao.HeaderText = "Graduação";
+            this.graduacao.Name = "graduacao";
+            this.graduacao.ReadOnly = true;
+            this.graduacao.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.graduacao.Visible = false;
+            // 
+            // plantao
+            // 
+            this.plantao.DataPropertyName = "plantao";
+            this.plantao.HeaderText = "Plantão";
+            this.plantao.Name = "plantao";
+            this.plantao.ReadOnly = true;
+            this.plantao.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.plantao.Visible = false;
+            // 
+            // equipe
+            // 
+            this.equipe.DataPropertyName = "equipe";
+            this.equipe.HeaderText = "Equipe";
+            this.equipe.Name = "equipe";
+            this.equipe.ReadOnly = true;
+            this.equipe.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.equipe.Visible = false;
+            // 
+            // posicao
+            // 
+            this.posicao.DataPropertyName = "posicao";
+            this.posicao.HeaderText = "Posição";
+            this.posicao.Name = "posicao";
+            this.posicao.ReadOnly = true;
+            this.posicao.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.posicao.Visible = false;
+            // 
+            // conclusao_formacao
+            // 
+            this.conclusao_formacao.DataPropertyName = "conclusao_formacao";
+            this.conclusao_formacao.HeaderText = "Conc. Formaçao";
+            this.conclusao_formacao.Name = "conclusao_formacao";
+            this.conclusao_formacao.ReadOnly = true;
+            this.conclusao_formacao.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.conclusao_formacao.Visible = false;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(743, 67);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(12, 18);
+            this.label46.TabIndex = 89;
+            this.label46.Text = "/";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 38);
+            // 
+            // btnCadastrarGraduacao
+            // 
+            this.btnCadastrarGraduacao.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnCadastrarGraduacao.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrarGraduacao.Image")));
+            this.btnCadastrarGraduacao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnCadastrarGraduacao.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCadastrarGraduacao.Name = "btnCadastrarGraduacao";
+            this.btnCadastrarGraduacao.Size = new System.Drawing.Size(68, 35);
+            this.btnCadastrarGraduacao.Text = "Graduação";
+            this.btnCadastrarGraduacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCadastrarGraduacao.Click += new System.EventHandler(this.btnCadastrarGraduacao_Click);
             // 
             // frmCadastrarGuardas
             // 
@@ -1172,15 +1833,17 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCadastrarGuardas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Guardas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmCadastrarGuardas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEquipamentos)).EndInit();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -1192,110 +1855,170 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtRg;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbUf;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbOrgEmissor;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbOeUF;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtCidadeTitulo;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dtpEmissaoTitulo;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtSessao;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtZona;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtTitEleitor;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpValidadeCnh;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtRegCnh;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtNumCnh;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.DateTimePicker dtpRgExpedido;
+        private System.Windows.Forms.TextBox txtPasep;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txtNomeMae;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtNomePai;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dtpNascimento;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtNaturalidade;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox cmbGraduacao;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtQra;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.DateTimePicker dtpDataAdmissao;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox txtRf;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox cmbFormacao;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cmbEscolaridade;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.DataGridView dgvGuardas;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox txtInstituicao;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox cmbFilhos;
+        private System.Windows.Forms.ComboBox cmbUfNaturalidade;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cmbUfProf;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.ComboBox cmbTipoSanguineo;
+        private System.Windows.Forms.TextBox txtObservacao;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox txtConclusaoSuperior;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox txtFormacaoMedio;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox cmbRestricao;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnVoltar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton btnInformarApreensao;
+        private System.Windows.Forms.ToolStripButton btnLimpar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton btnAcidentes;
+        private System.Windows.Forms.ToolStripButton btnAlterar;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton btnColete;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton btnArma;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvEquipamentos;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_agente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bairro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn complemento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn celular;
+        private System.Windows.Forms.DataGridViewTextBoxColumn num_cnh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reg_cnh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn validade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tit_eleitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cidade_tit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zona;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado_titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emissao_titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pis;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emissao_rg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado_rg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emissor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn data_nascimento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado_civil;
+        private System.Windows.Forms.DataGridViewTextBoxColumn filhos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn escolaridade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ano_conclusao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn instituicao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn formacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipo_sanguineo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn restricao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn obs_restricao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mae;
+        private System.Windows.Forms.DataGridViewTextBoxColumn naturalidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn naturalidade_estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reg_funcional;
+        private System.Windows.Forms.DataGridViewTextBoxColumn data_admissao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn graduacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plantao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn equipe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn posicao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn conclusao_formacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn a_nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn a_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn a_qra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn a_validade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_validade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn a_modelo;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton btnCadastrarGraduacao;
     }
 }

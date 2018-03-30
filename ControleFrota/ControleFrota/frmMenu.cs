@@ -18,7 +18,6 @@ namespace ControleFrota
         public frmMenu()
         {
             InitializeComponent();
-            
         }
 
         private void btnBoletimOcorrencia_Click(object sender, EventArgs e)
@@ -30,7 +29,7 @@ namespace ControleFrota
         private void btnGuardas_Click(object sender, EventArgs e)
         {
             frmCadastrarGuardas cadGcm = new frmCadastrarGuardas();
-            cadGcm.ShowDialog();
+            cadGcm.ShowDialog();            
         }
 
         private void btnViaturas_Click(object sender, EventArgs e)

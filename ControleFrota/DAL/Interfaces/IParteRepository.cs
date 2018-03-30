@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Data;
 
 namespace DAL.Interfaces
 {
     public interface IParteRepository
     {
-        void CadastrarParte(Partes partes);
+        void CadastrarParte(List<Partes> partes);
+        DataTable RetornarParteCpf(string cpf);
+        DataTable RetornarID(int limite);
     }
 }

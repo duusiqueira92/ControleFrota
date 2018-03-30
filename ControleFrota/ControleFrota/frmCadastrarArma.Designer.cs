@@ -54,10 +54,6 @@
             this.txtNumCadastro = new System.Windows.Forms.TextBox();
             this.txtAnoCadastro = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.lblOrgEmissor = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.lblRg = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
@@ -122,10 +118,6 @@
             this.groupBox1.Controls.Add(this.txtNumCadastro);
             this.groupBox1.Controls.Add(this.txtAnoCadastro);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.lblEstado);
-            this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Controls.Add(this.lblOrgEmissor);
-            this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.lblRg);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.lblCpf);
@@ -165,7 +157,12 @@
             // 
             // cmbFuncionamento
             // 
+            this.cmbFuncionamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFuncionamento.FormattingEnabled = true;
+            this.cmbFuncionamento.Items.AddRange(new object[] {
+            "AUTOMATICA",
+            "SEMI-AUTOMATICA",
+            "REPETIÇÃO"});
             this.cmbFuncionamento.Location = new System.Drawing.Point(126, 171);
             this.cmbFuncionamento.Name = "cmbFuncionamento";
             this.cmbFuncionamento.Size = new System.Drawing.Size(148, 26);
@@ -197,7 +194,23 @@
             // 
             // cmbCapTiros
             // 
+            this.cmbCapTiros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCapTiros.FormattingEnabled = true;
+            this.cmbCapTiros.Items.AddRange(new object[] {
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"});
             this.cmbCapTiros.Location = new System.Drawing.Point(387, 120);
             this.cmbCapTiros.Name = "cmbCapTiros";
             this.cmbCapTiros.Size = new System.Drawing.Size(87, 26);
@@ -205,7 +218,11 @@
             // 
             // txtSentRaia
             // 
+            this.txtSentRaia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtSentRaia.FormattingEnabled = true;
+            this.txtSentRaia.Items.AddRange(new object[] {
+            "DIREITO",
+            "ESQUERDO"});
             this.txtSentRaia.Location = new System.Drawing.Point(128, 261);
             this.txtSentRaia.Name = "txtSentRaia";
             this.txtSentRaia.Size = new System.Drawing.Size(125, 26);
@@ -213,7 +230,11 @@
             // 
             // txtTipoAlma
             // 
+            this.txtTipoAlma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtTipoAlma.FormattingEnabled = true;
+            this.txtTipoAlma.Items.AddRange(new object[] {
+            "LISA",
+            "RAIADA"});
             this.txtTipoAlma.Location = new System.Drawing.Point(128, 230);
             this.txtTipoAlma.Name = "txtTipoAlma";
             this.txtTipoAlma.Size = new System.Drawing.Size(125, 26);
@@ -221,7 +242,14 @@
             // 
             // cmbQtdCanos
             // 
+            this.cmbQtdCanos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbQtdCanos.FormattingEnabled = true;
+            this.cmbQtdCanos.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5+"});
             this.cmbQtdCanos.Location = new System.Drawing.Point(128, 200);
             this.cmbQtdCanos.Name = "cmbQtdCanos";
             this.cmbQtdCanos.Size = new System.Drawing.Size(87, 26);
@@ -229,7 +257,14 @@
             // 
             // txtQtdRaia
             // 
+            this.txtQtdRaia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtQtdRaia.FormattingEnabled = true;
+            this.txtQtdRaia.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5+"});
             this.txtQtdRaia.Location = new System.Drawing.Point(387, 230);
             this.txtQtdRaia.Name = "txtQtdRaia";
             this.txtQtdRaia.Size = new System.Drawing.Size(87, 26);
@@ -344,46 +379,10 @@
             this.label24.TabIndex = 33;
             this.label24.Text = "Data Validade:";
             // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(298, 508);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(28, 18);
-            this.lblEstado.TabIndex = 32;
-            this.lblEstado.Text = "SP";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(280, 508);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(12, 18);
-            this.label27.TabIndex = 31;
-            this.label27.Text = "/";
-            // 
-            // lblOrgEmissor
-            // 
-            this.lblOrgEmissor.AutoSize = true;
-            this.lblOrgEmissor.Location = new System.Drawing.Point(236, 508);
-            this.lblOrgEmissor.Name = "lblOrgEmissor";
-            this.lblOrgEmissor.Size = new System.Drawing.Size(38, 18);
-            this.lblOrgEmissor.TabIndex = 30;
-            this.lblOrgEmissor.Text = "SSP";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(218, 508);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(12, 18);
-            this.label25.TabIndex = 29;
-            this.label25.Text = "/";
-            // 
             // lblRg
             // 
             this.lblRg.AutoSize = true;
-            this.lblRg.Location = new System.Drawing.Point(127, 508);
+            this.lblRg.Location = new System.Drawing.Point(370, 480);
             this.lblRg.Name = "lblRg";
             this.lblRg.Size = new System.Drawing.Size(85, 18);
             this.lblRg.TabIndex = 28;
@@ -392,7 +391,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(85, 508);
+            this.label23.Location = new System.Drawing.Point(328, 480);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(35, 18);
             this.label23.TabIndex = 27;
@@ -633,7 +632,7 @@
             this.toolStripSeparator3,
             this.btnLimpar,
             this.toolStripSeparator2});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 579);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 531);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(578, 38);
             this.toolStrip1.TabIndex = 88;
@@ -683,6 +682,7 @@
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLimpar.ToolTipText = "Informar apreensões";
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // toolStripSeparator2
             // 
@@ -694,7 +694,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 617);
+            this.ClientSize = new System.Drawing.Size(578, 569);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -740,10 +740,6 @@
         private System.Windows.Forms.TextBox txtNumCadastro;
         private System.Windows.Forms.TextBox txtAnoCadastro;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label lblOrgEmissor;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lblRg;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label lblCpf;

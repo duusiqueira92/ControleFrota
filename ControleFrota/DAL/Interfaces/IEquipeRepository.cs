@@ -9,5 +9,6 @@ namespace DAL.Interfaces
     public interface IEquipeRepository
     {
         void CadastrarEquipe(Equipe equipe);
+        void CadastrarAbordado(Abordado abordado);
     }
 }

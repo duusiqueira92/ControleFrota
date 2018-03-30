@@ -2,11 +2,32 @@
 {
     public class Apreensao
     {
+        public Apreensao()
+        {
+
+        }
+
+        public Apreensao(string modeloObjeto, string corObjeto, double quantidade, string numObjeto, int idBoletim)
+        {
+            this.modeloObjeto = modeloObjeto;
+            this.corObjeto = corObjeto;
+            this.quantidade = quantidade;
+            this.numObjeto = numObjeto;
+            this.idBoletim = idBoletim;
+        }
+
+        private int idBoletim;
+        public int IdBoletim
+        {
+            get { return idBoletim; }
+            set { idBoletim = value; }
+        }
+
         private int id;
         public int Id
         {
             get { return id; }
-            private set { id = value; }
+            set { id = value; }
         }
 
         private string modeloObjeto;
@@ -23,11 +44,11 @@
             set { marca = value; }
         }
 
-        private Objeto categoriaObjeto;
-        public Objeto CategoriaObjeto
+        private int categoriaObjeto;
+        public int CategoriaObjeto
         {
             get { return categoriaObjeto; }
-            private set { categoriaObjeto = value; }
+            set { categoriaObjeto = value; }
         }
 
         private string numObjeto;
